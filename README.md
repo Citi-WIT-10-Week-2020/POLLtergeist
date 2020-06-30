@@ -1,2 +1,2 @@
-# minder
-app for mental health in the workplace (Emily H, Kendall, Shreya, Maria, Julia)
+# POLLtergeist
+an app for anonymous polling, surveying, and posting (Emily H, Kendall, Shreya, Maria, Julia)
