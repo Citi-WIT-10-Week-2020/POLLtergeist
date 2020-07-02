@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LoginHeaderComponent } from './login-header/login-header.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LoginHeaderComponent
+  ],
+  exports: [
+    LoginHeaderComponent
+  ],
   imports: [
     CommonModule
   ]
