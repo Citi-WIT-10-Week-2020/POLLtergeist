@@ -8,6 +8,9 @@ import { LoginModule } from './login/login.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomepageComponent } from './homepage/homepage.component';
+
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -19,7 +22,7 @@ import { AppComponent } from './app.component';
     HomepageModule,
     InternalModule,
     LoginModule,
-    AppRoutingModule
+    RouterModule.forRoot([{path: '', component: HomepageComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
