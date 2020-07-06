@@ -8,11 +8,9 @@ import { LoginModule } from './login/login.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
-
-import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RouterModule } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 
@@ -26,10 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomepageModule,
     InternalModule,
     LoginModule,
-    RouterModule.forRoot([{path: '', component: HomepageComponent}]),
-    BrowserAnimationsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([{path: '', component: HomepageComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
