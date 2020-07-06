@@ -11,18 +11,25 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     HomepageModule,
     InternalModule,
     LoginModule,
-    RouterModule.forRoot([{path: '', component: HomepageComponent}])
+    RouterModule.forRoot([{path: '', component: HomepageComponent}]),
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
