@@ -1,0 +1,27 @@
+p{
+    text-align: center
+}
+
+body{
+    background-color: white ;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.heading {
+   text-align: center;
+   font-weight: bold;
+   font-family: 'Jolly Lodger';
+   font-size: 30px;
+}
+
+.image-edu {
+   height: 100px; 
+   float: right; 
+   display: block;
+}

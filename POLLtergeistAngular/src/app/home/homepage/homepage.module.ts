@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage.component';
+import { RouterModule } from '@angular/router';
+import { EdupageComponent } from '../edupage/edupage.component';
+
 
 
 
@@ -9,5 +12,6 @@ import { HomepageComponent } from './homepage.component';
   imports: [
     CommonModule
   ]
+  
 })
 export class HomepageModule { }

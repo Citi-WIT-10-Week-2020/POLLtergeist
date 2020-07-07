@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <div class = "container-fluid">
+        <div class = "span1">
+          <img [src] = 'HomePageLogo'
+          [style.width.px] = 'imageWidthLogo'        
+          style ="display:block"
+          class="img-fluid" 
+          class=" mx-auto d-block"
+          alt="Responsive image">
+        </div>
+
+      <br>
+      <br>
+      <br>
+
+      <style>
+        .off-centerLeft{
+          display: block;
+           margin-left: 350px;
+           margin-right: auto;
+           width: 40%
+         
+        }
+      
+        .off-centerRight{
+          display: block;
+          margin-left: 520px;
+          margin-right: auto;
+          width: 40%
+        }
+      </style>
+
+
+        <div class = "off-centerLeft">
+          <form (ngSubmit) = 'onEdu()'>
+          <input type="image" 
+          [src]= 'EducationPackage'
+          class=" img-fluid"  
+          alt="Education Package"
+          (click)="onEdu()">
+          </form>
+        </div>
+
+        <div class = "off-centerRight">
+          <form (ngSubmit) = 'onBus()' > 
+            <input type = "image"
+            [src] = 'BusinessPackage'
+            class="img-fluid"  
+            alt="Responsive image"
+            (click) = "onBus()">
+          </form>
+        </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
+  </body>
+</html>  
