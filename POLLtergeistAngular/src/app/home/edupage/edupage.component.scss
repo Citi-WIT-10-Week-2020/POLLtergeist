@@ -1,9 +1,16 @@
-p{
-    text-align: center
-}
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
     background-color: white ;
+}
+
+p{
+    text-align: center;
+    font-weight: normal; 
+    font-family: "Josepfin Sans", "san serif";
+    font-size: 35px; 
+
 }
 
 .center {
@@ -15,13 +22,16 @@ body{
 
 .heading {
    text-align: center;
-   font-weight: bold;
-   font-family: 'Jolly Lodger';
-   font-size: 30px;
+   font-family: 'Jolly Lodger', cursive;
+   font-size: 60px;
 }
 
 .image-edu {
+   width: auto; 
+   vertical-align: text-bottom;  
    height: 100px; 
-   float: right; 
-   display: block;
+}
+
+.space {
+    margin-top:30px;
 }
