@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<h1 class = "heading">
+<div class="rectangle">polls</div>
+</h1>
+<body>
+    <br>
+    <div class = "rectangle2" (click)= onNewPoll()>Create New Poll</div>
+    <br>
+    <div class = "rectangle2" (click)="onExistingPoll()">Update Existing Poll</div>
+    <br>
+    <br>
+    <div class = "polltitle" >Polls To Take</div>
+    <tr *ngFor = 'let poll of pollslist'>
+        <td>{{poll.pollName}}</td>
+    </tr>
+</body>
+</html>
+

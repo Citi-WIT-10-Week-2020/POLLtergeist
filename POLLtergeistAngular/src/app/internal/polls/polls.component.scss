@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.rectangle {
+    height: 110px;
+    width: 100%;
+    background-color: #001233;
+    margin-top: 0px; 
+    padding: 35px; 
+  }
+
+.rectangle2 {
+    height: 85px;
+    width: 25%;
+    margin: auto;
+    background-color: #E2E2E2;
+    border-radius: 20px; 
+    padding: 15px;
+    font-size: 25px; 
+    vertical-align: center; 
+    text-align: center; 
+
+}
+
+.heading {
+    color: white; 
+    font-size: 80px;
+    text-align: center;
+    display: inline block;
+    font-family: 'Jolly Lodger', cursive;
+   
+}
+
+.polltitle{
+    text-align: center;
+    margin: auto;
+    font-size: 35px; 
+    font-family: "Josepfin Sans", "san serif";
+}
+
+.pollsquare{
+    width: 100px;
+    height: 100px; 
+    background-color: #93C7FF;
+}

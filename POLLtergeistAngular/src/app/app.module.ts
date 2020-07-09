@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { BusPageComponent } from './home/bus-page/bus-page.component';
+import { PollsComponent } from './internal/polls/polls.component';
 
 
 
@@ -34,7 +35,8 @@ import { BusPageComponent } from './home/bus-page/bus-page.component';
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
-                        {path: 'business', component:BusPageComponent}])
+                          {path: 'business', component:BusPageComponent},
+                          {path:"polls", component: PollsComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
