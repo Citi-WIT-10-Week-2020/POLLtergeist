@@ -6,15 +6,20 @@
 </h1>
 <body>
     <br>
+    <!-- buttons to create a poll or update a poll -->
     <div class = "rectangle2" (click)= onNewPoll()>Create New Poll</div>
     <br>
     <div class = "rectangle2" (click)="onExistingPoll()">Update Existing Poll</div>
     <br>
     <br>
     <div class = "polltitle" >Polls To Take</div>
-    <tr *ngFor = 'let poll of pollslist'>
-        <td>{{poll.pollName}}</td>
-    </tr>
+    <!-- row class makes sure squares are next to each other  -->
+    <div class = "row"> 
+        <!-- for loop iterates through array of polls -->
+        <div *ngFor="let poll of polls ">
+        <div class = "pollsquare" (click) = onSamplePoll()>{{poll.pollName}}</div>
+        </div>
+     </div> 
 </body>
 </html>
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <!-- homepage logo at very top  -->
       <div class = "container-fluid">
         <div class = "span1">
           <img [src] = 'HomePageLogo'
@@ -32,7 +33,7 @@
         }
       </style>
 
-
+        <!-- makes education package off center to the left and clickable --> 
         <div class = "off-centerLeft">
           <form (ngSubmit) = 'onEdu()'>
           <input type="image" 
@@ -43,6 +44,7 @@
           </form>
         </div>
 
+        <!-- makes business package off center to the right and clickable -->
         <div class = "off-centerRight">
           <form (ngSubmit) = 'onBus()' > 
             <input type = "image"
@@ -52,6 +54,7 @@
             (click) = "onBus()">
           </form>
         </div>
+      <!-- space  -->
       <br>
       <br>
       <br>
