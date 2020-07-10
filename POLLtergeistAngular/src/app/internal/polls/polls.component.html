@@ -17,7 +17,9 @@
     <div class = "row"> 
         <!-- for loop iterates through array of polls -->
         <div *ngFor="let poll of polls ">
-        <div class = "pollsquare" (click) = onSamplePoll()>{{poll.pollName}}</div>
+            <div class = "pollsquare" (click) = onSamplePoll()>
+            {{poll.pollName}}
+             </div>
         </div>
      </div> 
 </body>
