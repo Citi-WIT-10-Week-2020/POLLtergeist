@@ -14,6 +14,9 @@ import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { BusPageComponent } from './home/bus-page/bus-page.component';
 import { PollsComponent } from './internal/polls/polls.component';
+import { SurveysComponent } from './internal/surveys/surveys.component';
+import { SharedinternalComponent } from './internal/sharedinternal/sharedinternal.component';
+
 
 
 
@@ -23,6 +26,9 @@ import { PollsComponent } from './internal/polls/polls.component';
     AppComponent,
     EdupageComponent,
     BusPageComponent,
+    SurveysComponent,
+    SharedinternalComponent,
+    
     
   ],
   imports: [
@@ -36,7 +42,8 @@ import { PollsComponent } from './internal/polls/polls.component';
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
                           {path: 'business', component:BusPageComponent},
-                          {path:"polls", component: PollsComponent}])
+                          {path:"polls", component: PollsComponent},
+                          {path: "surveys", component: SurveysComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
