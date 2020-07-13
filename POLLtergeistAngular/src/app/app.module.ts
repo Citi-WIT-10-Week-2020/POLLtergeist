@@ -9,12 +9,20 @@ import { LoginModule } from './login/login.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './homepage/header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BusinesspackComponent } from './businesspack/businesspack.component';
+import { PollspageComponent } from './pollspage/pollspage.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    BusinesspackComponent,
+    PollspageComponent
     
   ],
   imports: [
@@ -23,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     InternalModule,
     LoginModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
