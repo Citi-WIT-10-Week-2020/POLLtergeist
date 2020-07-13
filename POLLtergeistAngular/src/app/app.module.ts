@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { HomepageModule } from './homepage/homepage.module';
+import { HomepageModule } from './home/homepage/homepage.module';
 import { InternalModule } from './internal/internal.module';
 import { LoginModule } from './login/login.module';
 
@@ -13,6 +13,12 @@ import { HeaderComponent } from './homepage/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BusinesspackComponent } from './businesspack/businesspack.component';
 import { PollspageComponent } from './pollspage/pollspage.component';
+import { RouterModule } from '@angular/router';
+import { HomepageComponent } from './home/homepage/homepage.component';
+import { EdupageComponent } from './home/edupage/edupage.component';
+import { BusPageComponent } from './home/bus-page/bus-page.component';
+import { PollsComponent } from './internal/polls/polls.component';
+
 
 
 
@@ -22,7 +28,9 @@ import { PollspageComponent } from './pollspage/pollspage.component';
     HeaderComponent,
     FooterComponent,
     BusinesspackComponent,
-    PollspageComponent
+    PollspageComponent,
+    EdupageComponent,
+    BusPageComponent,
     
   ],
   imports: [
@@ -32,7 +40,11 @@ import { PollspageComponent } from './pollspage/pollspage.component';
     LoginModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+    RouterModule.forRoot([{path: '', component: HomepageComponent}, 
+                          {path:'education', component: EdupageComponent},
+                          {path: '***', component: HomepageComponent },
+                          {path: 'business', component:BusPageComponent},
+                          {path:"polls", component: PollsComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
