@@ -9,6 +9,10 @@ import { LoginModule } from './login/login.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './homepage/header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BusinesspackComponent } from './businesspack/businesspack.component';
+import { PollspageComponent } from './pollspage/pollspage.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
@@ -21,6 +25,10 @@ import { PollsComponent } from './internal/polls/polls.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    BusinesspackComponent,
+    PollspageComponent,
     EdupageComponent,
     BusPageComponent,
     

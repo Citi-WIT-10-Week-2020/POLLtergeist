@@ -1,16 +1,23 @@
-import { Component} from '@angular/core'; 
+import { Component } from '@angular/core';
+//import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  
-  
+  selector: 'app-root',  
+  template:`
+  <app-header></app-header>
+  <app-businesspack></app-businesspack>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+  `,
+  //templateUrl: './app.component.html',
+  //styleUrls: ['./app.component.scss']
 })
-export class AppComponent { 
-  title = 'POLLtergeist ';
-  
+export class AppComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+  title = 'polltergeist';
 }
 
 
