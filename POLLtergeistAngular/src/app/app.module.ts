@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './homepage/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BusinesspackComponent } from './businesspack/businesspack.component';
-import { PollspageComponent } from './pollspage/pollspage.component';
+import { PollspageComponent } from './createpollspage/pollspage.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
@@ -43,7 +43,8 @@ import { PollsComponent } from './internal/polls/polls.component';
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
-                          {path: 'business', component:BusPageComponent},
+                          {path: 'business', component:BusinesspackComponent},
+                          {path: 'pollspage', component:PollspageComponent},
                           {path:"polls", component: PollsComponent}])
   ],
   providers: [],

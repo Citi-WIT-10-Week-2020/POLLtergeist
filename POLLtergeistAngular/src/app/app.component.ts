@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-root',  
   template:`
   <app-header></app-header>
-  <app-businesspack></app-businesspack>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
   `,
