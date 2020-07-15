@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { PollsComponent } from './internal/polls/polls.component';
+import { AboutusComponent } from './home/aboutus/aboutus.component';
 
 
 
@@ -29,6 +30,7 @@ import { PollsComponent } from './internal/polls/polls.component';
     BusinesspackComponent,
     PollspageComponent,
     EdupageComponent,
+    AboutusComponent,
     
   ],
   imports: [
@@ -42,6 +44,7 @@ import { PollsComponent } from './internal/polls/polls.component';
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
                           {path: 'business', component:BusinesspackComponent},
+                          {path: 'aboutus', component:AboutusComponent},
                           {path: 'pollspage', component:PollspageComponent},
                           {path:"polls", component: PollsComponent}])
   ],
