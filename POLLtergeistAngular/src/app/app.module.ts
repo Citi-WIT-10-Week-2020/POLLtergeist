@@ -16,6 +16,7 @@ import { BusPageComponent } from './home/bus-page/bus-page.component';
 import { PollsComponent } from './internal/polls/polls.component';
 import { SurveysComponent } from './internal/surveys/surveys.component';
 import { SharedinternalComponent } from './internal/sharedinternal/sharedinternal.component';
+import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
 
 
 
@@ -28,6 +29,7 @@ import { SharedinternalComponent } from './internal/sharedinternal/sharedinterna
     BusPageComponent,
     SurveysComponent,
     SharedinternalComponent,
+    CreateSurveyComponent,
     
     
   ],
@@ -43,7 +45,8 @@ import { SharedinternalComponent } from './internal/sharedinternal/sharedinterna
                           {path: '***', component: HomepageComponent },
                           {path: 'business', component:BusPageComponent},
                           {path:"polls", component: PollsComponent},
-                          {path: "surveys", component: SurveysComponent}])
+                          {path: "surveys", component: SurveysComponent},
+                          {path:"newSurvey", component: CreateSurveyComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]

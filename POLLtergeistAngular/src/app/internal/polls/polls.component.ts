@@ -35,6 +35,7 @@ export class PollsComponent implements OnInit {
   onSample(event) {
     var target = event.target || event.srcElement || event.currentTarget; 
     target.style.backgroundColor= '#023E7D';
+    target.style.color = '#FFFFFF'
     alert("route to poll");
     //will pass in link to poll and redirect to the poll
   }
