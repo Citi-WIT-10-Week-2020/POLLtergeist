@@ -20,7 +20,7 @@ import { PollsComponent } from './internal/polls/polls.component';
 import { SurveysComponent } from './internal/surveys/surveys.component';
 import { SharedinternalComponent } from './internal/sharedinternal/sharedinternal.component';
 import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
-
+import { AboutusComponent } from './home/aboutus/aboutus.component';
 
 
 
@@ -33,6 +33,7 @@ import { CreateSurveyComponent } from './internal/create-survey/create-survey.co
     BusinesspackComponent,
     PollspageComponent,
     EdupageComponent,
+    AboutusComponent,
     
   ],
   imports: [
@@ -46,6 +47,7 @@ import { CreateSurveyComponent } from './internal/create-survey/create-survey.co
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
                           {path: 'business', component:BusinesspackComponent},
+                          {path: 'aboutus', component:AboutusComponent},
                           {path: 'pollspage', component:PollspageComponent},
                           {path:"polls", component: PollsComponent},
                           {path: "surveys", component: SurveysComponent},

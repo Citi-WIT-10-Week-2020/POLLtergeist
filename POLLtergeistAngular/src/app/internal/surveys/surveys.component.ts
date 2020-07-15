@@ -11,8 +11,10 @@ export class SurveysComponent implements OnInit {
   type: string = "survey"; 
 
   samples= [{sampleName: "survey1"}, {sampleName: "survey2"}, {sampleName: "survey3"}, {sampleName: "survey4"}, {sampleName: "survey5"},
-  {sampleName: "survey6"}, {sampleName: "survey7"}, {sampleName: "survey8"}, {sampleName: "survey9"}, {sampleName: "survey10"},
-  {sampleName: "survey11"}, {sampleName: "survey12"}];
+  {sampleName: "survey6"}, {sampleName: "survey7"}
+ // , {sampleName: "survey8"}, {sampleName: "survey9"}, {sampleName: "survey10"},
+ // {sampleName: "survey11"}, {sampleName: "survey12"}
+  ];
 
 constructor() { }
 

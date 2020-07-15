@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "minder"
+  "defaultProject": "minder",
+  "cli": {
+    "analytics": false
+  }
 }
