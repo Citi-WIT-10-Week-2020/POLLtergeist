@@ -2,35 +2,40 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-polls',
-  templateUrl: './polls.component.html',
-  styleUrls: ['./polls.component.scss']
+  templateUrl: '../sharedinternal/sharedinternal.component.html',
+  styleUrls: ['./polls.component.scss','../sharedinternal/sharedinternal.component.scss']
 })
 export class PollsComponent implements OnInit {
   router: any;
+  
+  titlePage: string = "Polls";
+  type: string = "Poll"; 
 
-  //sample data to test polls main page 
-  polls= [{pollName: "poll1"}, {pollName: "poll2"}, {pollName: "poll3"}, {pollName: "poll4"}, {pollName: "poll5"},
-          {pollName: "poll6"}, {pollName: "poll7"}, {pollName: "poll8"}, {pollName: "poll9"}, {pollName: "poll10"},
-          {pollName: "poll11"}, {pollName: "poll12"}];
+  //sample data 
+  samples= [{sampleName: "poll1"}, {sampleName: "poll2"}, {sampleName: "poll3"}, {sampleName: "poll4"}, {sampleName: "poll5"},
+  {sampleName: "poll6"}, {sampleName: "poll7"}, {sampleName: "poll8"}, {sampleName: "poll9"}, {sampleName: "poll10"},
+  {sampleName: "poll11"}, {sampleName: "poll12"}];
 
   constructor() { }
 
   ngOnInit(): void {
-
     
   }
-
-  onNewPoll(){
+ 
+  onNew(){
     alert("route to new poll template");
     //this.router.navigate(['newpoll']);
   }
 
-  onExistingPoll(){
+  onExisting(){
     alert("route to drafts");
     //this.router.navigate(['drafts']);
   }
 
-  onSamplePoll() {
+  onSample(event) {
+    var target = event.target || event.srcElement || event.currentTarget; 
+    target.style.backgroundColor= '#023E7D';
+    target.style.color = '#FFFFFF'
     alert("route to poll");
     //will pass in link to poll and redirect to the poll
   }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<h1 class = "heading">
+<div class="rectangle">{{titlePage}}</div>
+</h1>
+<body>
+    <br>
+    <!-- buttons to create a poll or update a poll -->
+    <div class = "rectangle2" (click)= "onNew()">Create New {{type}}</div>
+    <br>
+    <div class = "rectangle2" (click)="onExisting()">Update Existing {{type}}</div>
+    <br>
+    <br>
+    <div class = "polltitle" >{{titlePage}} To Take</div>
+    <!-- row class makes sure squares are next to each other  -->
+    <div class = "row"> 
+        <!-- for loop iterates through array of polls -->
+        <div *ngFor="let sample of samples ">
+            <div class = "pollsquare" (click) = "onSample($event)">
+                    {{sample.sampleName}} 
+             </div>
+    </div>
+     </div> 
+</body>
+</html>
+
