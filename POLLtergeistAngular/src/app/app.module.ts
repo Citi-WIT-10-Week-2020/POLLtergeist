@@ -16,7 +16,6 @@ import { PollspageComponent } from './createpollspage/pollspage.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
-import { BusPageComponent } from './home/bus-page/bus-page.component';
 import { PollsComponent } from './internal/polls/polls.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 
@@ -31,7 +30,6 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
     BusinesspackComponent,
     PollspageComponent,
     EdupageComponent,
-    BusPageComponent,
     AboutusComponent,
     
   ],
