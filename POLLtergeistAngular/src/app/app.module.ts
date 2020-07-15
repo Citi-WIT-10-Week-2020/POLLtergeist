@@ -8,7 +8,6 @@ import { LoginModule } from './login/login.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< Updated upstream
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './homepage/header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,10 +20,6 @@ import { BusPageComponent } from './home/bus-page/bus-page.component';
 import { PollsComponent } from './internal/polls/polls.component';
 
 
-=======
-import { HeaderComponent } from './homepage/header/header.component';
-import { FooterComponent } from './footer/footer.component';
->>>>>>> Stashed changes
 
 
 @NgModule({
@@ -32,14 +27,11 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-<<<<<<< Updated upstream
     BusinesspackComponent,
     PollspageComponent,
     EdupageComponent,
     BusPageComponent,
     
-=======
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,

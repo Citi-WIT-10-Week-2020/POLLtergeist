@@ -45,6 +45,7 @@ input{
 p{
     font-family: 'Josefin Sans', sans-serif;
     margin:50px;
+    font-size: 0.9em;
 }
 h1{
     font-family: 'Josefin Sans', sans-serif;
@@ -53,14 +54,31 @@ h1{
 }
 .rectangle{
     height: 30px;
+    //top: 20px;
     width: 400px;
     //text-align: justify;
     color: white;
     margin: 50px;
+    border-radius: 5px;
     background-color: #023E7D;
 }
 .bluebutton{
     //margin: 30px;
     padding-left: 40px;
     float: left;
+}
+.plus{
+    padding-left: 40px;
+    float: left;
+    //padding-bottom: 45px;
+    //padding-top: 25px;
+}
+.checkxmark{
+    float: right;
+    position: relative; 
+    margin-right: 200px;
+    top:-200px;
+}
+.rectangle2{
+    background-color:#C4C4C4;
 }

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 //import { Router } from '@angular/router';
 
 @Component({
-<<<<<<< Updated upstream
   selector: 'app-root',  
   template:`
   <app-header></app-header>
@@ -11,19 +10,7 @@ import { Component } from '@angular/core';
   `,
   //templateUrl: './app.component.html',
   //styleUrls: ['./app.component.scss']
-=======
-  selector: 'app-root',
-  template: `
-    
-    <app-header></app-header>
-    <app-footer></app-footer>
-
-    <router-outlet></router-outlet>
-   
-     
-    `,
   styles:[]
->>>>>>> Stashed changes
 })
 export class AppComponent {
   constructor() { }
