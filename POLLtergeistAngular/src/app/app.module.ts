@@ -18,6 +18,7 @@ import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { BusPageComponent } from './home/bus-page/bus-page.component';
 import { PollsComponent } from './internal/polls/polls.component';
+import { AboutusComponent } from './home/aboutus/aboutus.component';
 
 
 
@@ -31,6 +32,7 @@ import { PollsComponent } from './internal/polls/polls.component';
     PollspageComponent,
     EdupageComponent,
     BusPageComponent,
+    AboutusComponent,
     
   ],
   imports: [
@@ -44,6 +46,7 @@ import { PollsComponent } from './internal/polls/polls.component';
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
                           {path: 'business', component:BusinesspackComponent},
+                          {path: 'aboutus', component:AboutusComponent},
                           {path: 'pollspage', component:PollspageComponent},
                           {path:"polls", component: PollsComponent}])
   ],
