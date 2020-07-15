@@ -31,7 +31,9 @@ alert("route to drafts");
 //this.router.navigate(['drafts']);
 }
 
-onSample() {
+onSample(event) {
+  var target = event.target || event.srcElement || event.currentTarget; 
+  target.style.backgroundColor= '#023E7D';
 alert("route to survey");
 //will pass in link to poll and redirect to the poll
 }
