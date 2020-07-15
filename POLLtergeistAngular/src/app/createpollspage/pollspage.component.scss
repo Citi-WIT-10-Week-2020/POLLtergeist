@@ -44,7 +44,23 @@ input{
 }
 p{
     font-family: 'Josefin Sans', sans-serif;
+    margin:50px;
 }
 h1{
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center; 
+    margin: 40px 80px;
+}
+.rectangle{
+    height: 30px;
+    width: 400px;
+    //text-align: justify;
+    color: white;
+    margin: 50px;
+    background-color: #023E7D;
+}
+.bluebutton{
+    //margin: 30px;
+    padding-left: 40px;
+    float: left;
 }
