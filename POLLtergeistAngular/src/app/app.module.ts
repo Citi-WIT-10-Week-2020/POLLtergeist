@@ -22,6 +22,7 @@ import { SharedinternalComponent } from './internal/sharedinternal/sharedinterna
 import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
+import { DraftsComponent } from './drafts/drafts.component';
 
 
 
@@ -36,6 +37,7 @@ import { InternalheaderComponent } from './internal/internalnavbar/internalheade
     EdupageComponent,
     AboutusComponent,
     InternalheaderComponent,
+    DraftsComponent,
     
   ],
   imports: [

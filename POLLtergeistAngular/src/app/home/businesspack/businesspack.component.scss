@@ -1,24 +1,38 @@
-h1{
-    padding: 1em;
-    //padding-bottom: 1em;
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    background-color: white ;
+}
+
+p{
     text-align: center;
-    font-family: 'Jolly Lodger', cursive;
-    color: #001233;
-    //font-size: 3.5em
-    font-size: 4.5vw;
+    font-weight: normal; 
+    font-family: "Josefin Sans", "san serif";
+    font-size: 35px; 
+
 }
-.subheader{
-  padding-bottom: 2em;
-  text-align: center;
-  right: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  //font-size: 2em
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
-h3{
-  font-size: 2.5vw;
-  font-family: 'Josefin Sans', sans-serif;
+
+.heading {
+   text-align: center;
+   font-family: 'Jolly Lodger', cursive;
+   font-size: 60px;
 }
-img{
-    position: relative;
-    top: 20px;
+
+.image-bus {
+   width: auto; 
+   //aligns image with title 
+   vertical-align: text-bottom;  
+   height: 100px; 
+}
+
+.space {
+    margin-top:30px;
 }
