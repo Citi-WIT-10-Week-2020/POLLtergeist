@@ -51,7 +51,7 @@ top:-160px;
 p{
     font-family: 'Josefin Sans', sans-serif;
     margin:50px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 h1{
     font-family: 'Josefin Sans', sans-serif;
@@ -85,6 +85,7 @@ h1{
     float: right;
     position: relative; 
     margin-right: 200px;
+    //margin-left: 20px;
     top:-200px;
 }
 .rectangle2{
@@ -93,4 +94,11 @@ h1{
     border-radius: 5px;
     //height: 250px;
     margin: 40px;
+}
+.center{
+  display: block;
+  //margin: 100px;
+  margin-left: 50%;
+  margin-right: auto;
+  //width: 10%;
 }
