@@ -17,6 +17,9 @@ import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { PollsComponent } from './internal/polls/polls.component';
+import { SurveysComponent } from './internal/surveys/surveys.component';
+import { SharedinternalComponent } from './internal/sharedinternal/sharedinternal.component';
+import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 
 
@@ -46,7 +49,9 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
                           {path: 'business', component:BusinesspackComponent},
                           {path: 'aboutus', component:AboutusComponent},
                           {path: 'pollspage', component:PollspageComponent},
-                          {path:"polls", component: PollsComponent}])
+                          {path:"polls", component: PollsComponent},
+                          {path: "surveys", component: SurveysComponent},
+                          {path:"newSurvey", component: CreateSurveyComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
