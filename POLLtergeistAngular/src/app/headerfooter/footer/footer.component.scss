@@ -7,8 +7,12 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     //letter-spacing: 1px;
-    font-size: 100%;
+    font-size: 13px;
     line-height: 30px;
     padding-top: 2px;
-    background-color: #979DAC
+    background-color: #979DAC;
+    //makes sure footer is at the bottom of the page
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
 }

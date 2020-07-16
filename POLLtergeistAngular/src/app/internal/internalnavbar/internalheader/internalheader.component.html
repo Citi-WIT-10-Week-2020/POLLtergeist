@@ -1,0 +1,39 @@
+ <div *ngIf= "internalNav.visible"> 
+<div class="d-flex justify-content-between">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <!-- Logo is clickable and redirects to homepage -->
+    <div class="p-1">
+        <div class = "logo">
+         <form (ngSubmit) = 'backHome()'>
+         <input type="image"  
+        src="/assets/img/jilly_ghost.png" 
+         class=" img-fluid"   
+         alt="JillyGhost" 
+         (click)="backHome()"> 
+        </form> 
+    </div>
+
+</div>
+   
+    <div class="p-1">
+        <nav>
+            <a routerLink="/polls">polls</a>
+            <a routerLink="/surveys">surveys</a>
+            <a routerLink="/drafts">drafts</a>
+        </nav>
+    </div>
+ 
+    <div class="button">
+        <nav>
+            <b routerLink="/profile">account</b>
+        </nav> 
+    </div>
+    <div class="button">
+        <nav>   
+            <b routerLink="">log out</b>
+        </nav>
+    </div>
+ </div> 
+

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',  
   template:`
   <app-header></app-header>
+  <app-internalheader></app-internalheader>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
   `,

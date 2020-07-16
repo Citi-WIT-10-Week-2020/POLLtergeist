@@ -1,9 +1,19 @@
+<div *ngIf="nav.visible">
 <div class="d-flex justify-content-between">
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
+<!-- Logo is clickable and redirects to homepage -->
     <div class="p-1">
-        <img class="logo" src="/assets/img/jilly_ghost.png" alt="JillyGhost">
+        <div class = "logo">
+         <form (ngSubmit) = 'backHome()'>
+         <input type="image"  
+        src="/assets/img/jilly_ghost.png" 
+         class=" img-fluid"   
+         alt="JillyGhost" 
+         (click)="backHome()"> 
+        </form> 
+    </div>
     </div>
     <div class="p-1">
         <nav>
@@ -21,4 +31,5 @@
         <nav>   
             <a routerLink="/login">login</a>
         </nav>
+</div>
 </div>

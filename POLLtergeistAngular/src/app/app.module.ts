@@ -9,10 +9,10 @@ import { LoginModule } from './login/login.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './homepage/header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BusinesspackComponent } from './businesspack/businesspack.component';
-import { PollspageComponent } from './createpollspage/pollspage.component';
+import { HeaderComponent } from './headerfooter/header/header.component';
+import { FooterComponent } from './headerfooter/footer/footer.component';
+import { BusinesspackComponent } from './home/businesspack/businesspack.component';
+import { PollspageComponent } from './internal/createpollspage/pollspage.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
@@ -21,6 +21,7 @@ import { SurveysComponent } from './internal/surveys/surveys.component';
 import { SharedinternalComponent } from './internal/sharedinternal/sharedinternal.component';
 import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
+import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 
 
 
@@ -34,6 +35,7 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
     PollspageComponent,
     EdupageComponent,
     AboutusComponent,
+    InternalheaderComponent,
     
   ],
   imports: [

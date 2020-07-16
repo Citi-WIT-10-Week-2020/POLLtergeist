@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { HeaderService } from 'src/app/services/header.service';
+import { InternalheaderService } from 'src/app/services/internalheader.service';
 
 
  
@@ -11,7 +13,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class EdupageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public nav: HeaderService, public internalNav: InternalheaderService) {
+    this.nav.show(); //shows homepage navbar
+    this.internalNav.hide();  //hides internal navbar
+   }
   edubook: any = "assets/img/EduPageBook.png";
   ngOnInit(): void {
   }
