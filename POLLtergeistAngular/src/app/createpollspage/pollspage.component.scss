@@ -29,6 +29,12 @@ input{
     margin: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
+.calendar{
+float:right;
+position: relative;
+right:20px;
+top:-160px;
+}
 .button2{
     background-color: #023E7D;
     color: white;
@@ -69,7 +75,9 @@ h1{
 }
 .plus{
     padding-left: 40px;
+    //margin-bottom:5px;
     float: left;
+    margin:-20px -30px;
     //padding-bottom: 45px;
     //padding-top: 25px;
 }
@@ -81,4 +89,8 @@ h1{
 }
 .rectangle2{
     background-color:#C4C4C4;
+    //height:100px;
+    border-radius: 5px;
+    //height: 250px;
+    margin: 40px;
 }

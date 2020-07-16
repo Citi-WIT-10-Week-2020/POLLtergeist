@@ -1,6 +1,14 @@
 //.copyright
     //flex-grow: 1
     //align-self: center
+#page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+      
+#content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
     
 footer{
     color:white;
@@ -8,7 +16,13 @@ footer{
     text-align: center;
     //letter-spacing: 1px;
     font-size: 100%;
-    line-height: 30px;
+    //line-height: 30px;
     padding-top: 2px;
-    background-color: #979DAC
+    background-color: #979DAC;
+    //position: fixed; 
+    //padding: 10px 10px 0px 10px; 
+    position: absolute; 
+    height: 4%;
+    width:100%;
+    bottom: 0; 
 }
