@@ -6,6 +6,10 @@ import { InternalModule } from './internal/internal.module';
 import { LoginModule } from './login/login.module';
 
 
+import { MaterialModule } from './material.module';
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -42,6 +46,7 @@ import { DraftsComponent } from './drafts/drafts.component';
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     HomepageModule,
     InternalModule,
     LoginModule,
