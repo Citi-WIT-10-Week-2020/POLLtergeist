@@ -24,6 +24,9 @@ import { CreateSurveyComponent } from './internal/create-survey/create-survey.co
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 
 
@@ -39,6 +42,9 @@ import { DraftsComponent } from './drafts/drafts.component';
     AboutusComponent,
     InternalheaderComponent,
     DraftsComponent,
+    LoginPageComponent,
+    SignUpComponent,
+    CreateAccountComponent,
     
   ],
   imports: [
