@@ -6,7 +6,6 @@ import { InternalModule } from './internal/internal.module';
 import { LoginModule } from './login/login.module';
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +24,12 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
 
+import { MatDatepickerModule, MatDatepickerToggle } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+//import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -39,7 +44,6 @@ import { DraftsComponent } from './drafts/drafts.component';
     AboutusComponent,
     InternalheaderComponent,
     DraftsComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,12 @@ import { DraftsComponent } from './drafts/drafts.component';
     InternalModule,
     LoginModule,
     AppRoutingModule,
+    MatDatepickerModule,
+    MatDatepickerToggle,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    //FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},

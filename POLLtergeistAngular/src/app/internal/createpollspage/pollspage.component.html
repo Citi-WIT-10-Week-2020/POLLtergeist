@@ -1,3 +1,4 @@
+<!------------
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
@@ -7,23 +8,13 @@
 <p style="text-align: left; top:10px; margin: 15px 20px -30px;font-size:25px;">click to edit:</p>
     <button type="button" class="button2"> Title of New Poll </button>
 <p style="text-align: right; margin: 100px 100px;font-size:25px">Choose Deadline:</p> 
-
-
-    <div class="calendar">
-        
-<body>
-
-<form action="/action_page.php">
-  <label for="deadline">Deadline:</label>
-  <input type="date" id="deadline" name="deadline">
-  <input type="submit">
-</form>
-
-</body>
-
-    <img src="/assets/img/calendar.png" width="60" height="60">
-    </div>
-
+--------->
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+<!---------
 <div class="rectangle2">
 <div class="question">
     <div class="rectangle">
@@ -82,3 +73,4 @@
 <img src="/assets/img/plus_sign.png" width="40" height="50" class="center">
 
 </body>
+---------->
