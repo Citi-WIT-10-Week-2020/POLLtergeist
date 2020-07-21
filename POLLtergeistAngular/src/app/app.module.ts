@@ -24,9 +24,8 @@ import { CreateSurveyComponent } from './internal/create-survey/create-survey.co
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { CreateAccountComponent } from './create-account/create-account.component';
+import { LoginPageComponent } from './login/login-page/login-page.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
 
 
 
@@ -43,9 +42,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     InternalheaderComponent,
     DraftsComponent,
     LoginPageComponent,
-    SignUpComponent,
-    CreateAccountComponent,
-    
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -55,14 +52,16 @@ import { CreateAccountComponent } from './create-account/create-account.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
-                          {path:'education', component: EdupageComponent},
+                          {path: 'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
-                          {path: 'business', component:BusinesspackComponent},
-                          {path: 'aboutus', component:AboutusComponent},
-                          {path: 'pollspage', component:PollspageComponent},
-                          {path:"polls", component: PollsComponent},
-                          {path: "surveys", component: SurveysComponent},
-                          {path:"newSurvey", component: CreateSurveyComponent}])
+                          {path: 'business', component: BusinesspackComponent},
+                          {path: 'aboutus', component: AboutusComponent},
+                          {path: 'pollspage', component: PollspageComponent},
+                          {path: 'polls', component: PollsComponent},
+                          {path: 'surveys', component: SurveysComponent},
+                          {path: 'newSurvey', component: CreateSurveyComponent},
+                          {path: 'login', component: LoginPageComponent},
+                          {path: 'signup', component: SignUpComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
