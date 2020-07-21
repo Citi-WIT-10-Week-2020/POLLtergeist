@@ -24,11 +24,9 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
 
-import { MatDatepickerModule, MatDatepickerToggle } from '@angular/material/datepicker';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatNativeDateModule } from '@angular/material/core';
-//import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import{MatInputModule} from '@angular/material/input';
+import{MatNativeDateModule} from '@angular/material/core'
 
 
 
@@ -51,12 +49,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     InternalModule,
     LoginModule,
     AppRoutingModule,
-    MatDatepickerModule,
-    MatDatepickerToggle,
-    MatFormFieldModule,
-    MatInputModule,
-    MatNativeDateModule,
-    //FormsModule,
+    MatDatepickerModule,MatInputModule,MatNativeDateModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},

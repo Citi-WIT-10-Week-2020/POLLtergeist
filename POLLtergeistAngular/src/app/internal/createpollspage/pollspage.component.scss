@@ -14,6 +14,7 @@ button{
     top:20px;
     font-family: 'Josefin Sans', sans-serif;
 }
+/*
 input{
     border:none;
     background-color: #001233;
@@ -29,6 +30,7 @@ input{
     margin: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
+*/
 .calendar{
 float:right;
 position: relative;
@@ -101,4 +103,12 @@ h1{
   margin-left: 50%;
   margin-right: auto;
   //width: 10%;
+}
+.deadline{
+float:right;
+position: relative;
+//margin-left: 45%;
+right:110px;
+//margin:30px 50px;
+top:-100px;
 }
