@@ -23,6 +23,12 @@ import { CreateSurveyComponent } from './internal/create-survey/create-survey.co
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 
+//angular material library
+import { MaterialModule } from './internal/material.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
+import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
+
 
 
 
@@ -36,6 +42,9 @@ import { InternalheaderComponent } from './internal/internalnavbar/internalheade
     EdupageComponent,
     AboutusComponent,
     InternalheaderComponent,
+    CreateSurveyComponent,
+    SurveysComponent,
+   
     
   ],
   imports: [
@@ -45,6 +54,10 @@ import { InternalheaderComponent } from './internal/internalnavbar/internalheade
     LoginModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialModule,
+    MatCheckboxModule,
+    FormsModule,
+/*  commented out routing paths in routing module now 
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
@@ -54,6 +67,9 @@ import { InternalheaderComponent } from './internal/internalnavbar/internalheade
                           {path:"polls", component: PollsComponent},
                           {path: "surveys", component: SurveysComponent},
                           {path:"newSurvey", component: CreateSurveyComponent}])
+
+ */
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   <router-outlet></router-outlet>
   <app-footer></app-footer>
   `,
-  //templateUrl: './app.component.html',
-  //styleUrls: ['./app.component.scss']
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   constructor() { }

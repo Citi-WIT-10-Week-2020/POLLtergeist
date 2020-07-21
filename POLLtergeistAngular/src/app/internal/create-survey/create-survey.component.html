@@ -1,9 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <h1>
-        Title of New Survey 
-    </h1>
-    <h2>
-        Question 1
-    </h2>
-</html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+<body>
+<!-- background color of form -->
+<div class = "backgroundForm">
+<!-- input title of survey -->
+<div layout = "row"> 
+<!-- aligns title and date picker -->
+<div class = "layoutIn">
+<form class = "example-form">
+    <div class = "rectangle">
+      <mat-form-field class="example-full-width">
+       <mat-label>Title of Survey</mat-label>
+          <textarea matInput placeholder="Ex. Survey1"></textarea>
+      </mat-form-field>
+    </div>
+</form>
+
+<!-- choose date for deadline -->
+  <div class = "right">
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+</div>
+
+<!-- first question -->
+<div class = "top"></div>
+<div class = "question">
+    <div class="example-container">
+      <mat-form-field style= "width: 600px;" appearance="fill">
+        <mat-label>Title of Question 1</mat-label>
+          <input matInput>
+      </mat-form-field>
+       
+<br>
+
+<!-- answer to question 1  -->
+<mat-form-field  style = "width: 500px;" appearance="outline">
+  <div class = "txtArea">
+    <mat-label>Answer Here</mat-label>
+        <textarea matInput></textarea>
+  </div>
+</mat-form-field>
+</div>
+
+<!-- menu to add more questions  -->
+<div class = "center">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>add circle icon</mat-icon>
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="delete" aria-label="Example icon-button with a menu">
+    <mat-icon>delete icon</mat-icon>
+  </button>
+
+
+  <mat-menu #delete="matMenu">
+    <button mat-menu-item>
+        <span>Delete Previous</span>
+    </button>
+    <button mat-menu-item>
+     <span>Delete All</span>
+    </button>
+  </mat-menu>
+
+
+    <mat-menu #menu="matMenu">
+      <button (click) = "onFreeResponse" mat-menu-item>
+          <span> Free Response</span>
+      </button>
+      <button mat-menu-item>
+       <span>Multiple Choice</span>
+      </button>
+      <button mat-menu-item>
+        <span>CheckList</span>
+      </button>
+    </mat-menu>
+</div>
+
+<br>  
+<br>
+<br>
+
+<div class='element' id='div_1'>
+  <input type='text' placeholder='Enter your skill' id='txt_1' >&nbsp;<span class='add'>Add Skill</span>
+ </div>
+
+ <div class = "top"></div>
+ <div class = "center">
+ <button  id='submit'>
+  <span>Submit</span>
+ </button>
+ </div>
+<br>
+<br>
+
+</div>
+</div>
+
+
+
+  <script>
+       $(document).ready(function(){
+         function myFunction () {
+        alert("hi");
+
+       }
+
+// Add new element
+          $("#submit").click(function(){
+            alert("Hello! I am an alert box!!");
+          
+          } )
+          });
+
+  </script>
+</body>
+
+<!-- number clicks/total questions x 100 equals progress -->
+ <!-- <mat-progress-bar mode="determinate" value="80"></mat-progress-bar> -->
