@@ -22,6 +22,13 @@ import { SharedinternalComponent } from './internal/sharedinternal/sharedinterna
 import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
+import { DraftsComponent } from './drafts/drafts.component';
+
+//import { MatDatepickerModule, MatDatepickerToggle } from '@angular/material/datepicker';
+//import { MatFormFieldModule } from '@angular/material/form-field';
+//import { MatInputModule } from '@angular/material/input';
+//import { MatNativeDateModule } from '@angular/material/core';
+//import { FormsModule } from '@angular/forms';
 
 //angular material library
 import { MaterialModule } from './internal/material.module';
@@ -44,8 +51,7 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
     InternalheaderComponent,
     CreateSurveyComponent,
     SurveysComponent,
-   
-    
+    DraftsComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +59,12 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
     InternalModule,
     LoginModule,
     AppRoutingModule,
+    MatDatepickerModule,
+    //MatDatepickerToggle,
+    //MatFormFieldModule,
+    //MatInputModule,
+    //MatNativeDateModule,
+    //FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatCheckboxModule,
