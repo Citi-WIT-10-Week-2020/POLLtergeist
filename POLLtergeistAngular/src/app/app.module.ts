@@ -28,6 +28,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
 import{MatNativeDateModule} from '@angular/material/core'
 
+//angular material library
+import { MaterialModule } from './internal/material.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
+import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
+
 
 
 
@@ -41,6 +47,8 @@ import{MatNativeDateModule} from '@angular/material/core'
     EdupageComponent,
     AboutusComponent,
     InternalheaderComponent,
+    CreateSurveyComponent,
+    SurveysComponent,
     DraftsComponent,
   ],
   imports: [
@@ -50,7 +58,17 @@ import{MatNativeDateModule} from '@angular/material/core'
     LoginModule,
     AppRoutingModule,
     MatDatepickerModule,MatInputModule,MatNativeDateModule,
+    //MatDatepickerModule,
+    //MatDatepickerToggle,
+    //MatFormFieldModule,
+    //MatInputModule,
+    //MatNativeDateModule,
+    //FormsModule,
     BrowserAnimationsModule,
+    MaterialModule,
+    MatCheckboxModule,
+    FormsModule,
+/*  commented out routing paths in routing module now 
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path:'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
@@ -60,6 +78,9 @@ import{MatNativeDateModule} from '@angular/material/core'
                           {path:"polls", component: PollsComponent},
                           {path: "surveys", component: SurveysComponent},
                           {path:"newSurvey", component: CreateSurveyComponent}])
+
+ */
+
   ],
   providers: [],
   bootstrap: [AppComponent]
