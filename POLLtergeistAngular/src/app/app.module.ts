@@ -24,7 +24,7 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
+//import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
 import{MatNativeDateModule} from '@angular/material/core'
 
@@ -33,7 +33,9 @@ import { MaterialModule } from './internal/material.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
 import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
-
+//angular material forms
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 
 
 
@@ -57,6 +59,7 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
     InternalModule,
     LoginModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     MatDatepickerModule,MatInputModule,MatNativeDateModule,
     //MatDatepickerModule,
     //MatDatepickerToggle,
