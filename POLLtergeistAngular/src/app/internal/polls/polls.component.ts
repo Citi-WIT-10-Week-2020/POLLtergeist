@@ -31,8 +31,7 @@ export class PollsComponent implements OnInit {
   }
 
   onExisting(){
-    alert("route to drafts");
-    //this.router.navigate(['drafts']);
+    this.router.navigate(['drafts']);
   }
 
   //on click poll square changes color
