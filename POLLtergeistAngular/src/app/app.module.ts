@@ -36,6 +36,8 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
 //angular material forms
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+import { OptionFormComponent } from './option-form/option-form.component';
+import { NestedOptionComponent } from './nested-option/nested-option.component';
 
 
 
@@ -52,6 +54,8 @@ import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@ang
     CreateSurveyComponent,
     SurveysComponent,
     DraftsComponent,
+    OptionFormComponent,
+    NestedOptionComponent,
   ],
   imports: [
     BrowserModule,

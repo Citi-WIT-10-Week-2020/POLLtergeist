@@ -3,11 +3,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button type="button">save as draft</button>
-    <button type="submit">submit</button>
+  
+    <button class="button">save as draft</button>
+    <button class="submit">submit</button>
+
 <p style="text-align: left; top:10px; margin: 15px 20px -30px;font-size:25px;">click to edit:</p>
+  <!----------
     <button type="button" class="button2"> Title of New Poll </button>
-    <p style="text-align: right; margin: 100px 100px;font-size:25px">Choose a Deadline:</p> 
+------>
+    <p style="text-align: right;margin:100px 100px;font-size:25px;">Choose a Deadline</p> 
 
 <div class= "deadline">
 <mat-form-field>
@@ -18,30 +22,46 @@
 </div>
 
     <form class="example-form">
-        <div class = "Title">
-        <mat-form-field class="example-full-width">
-          <mat-label>Title for New Poll</mat-label>
+        <div class = "title">
+        <mat-form-field class="example-container">
+          <mat-label style="color:white">Title for New Poll</mat-label>
           <textarea matInput placeholder="Ex. Poll 1"></textarea>
         </mat-form-field>      
     </div>
     </form>
 
+    <div class="rectangle2">
     <div class = "question">
         <div class="example-container">
           <mat-form-field class="example-full-width">
-            <mat-label>Title of Question 1</mat-label>
+            <mat-label style="color:white">Question 1</mat-label>
               <input matInput>
           </mat-form-field>
+        </div>
 
+        <form [formGroup]="myForm">
+        <div formArrayName="option">
+          <div *ngFor ="let option of optionForms.controls; let i=index" [formGroupName]="i">
+            <mat-form-field>
+              <input matInput placeholder = "option" formControlName="option">
+            </mat-form-field>
+
+            <button mat-raised-button color="warn" (click)="deleteOption(i)">Delete</button>
+          </div>
+
+        </div>
+    <button mat-raised-button color="primary" (click)="addOption()">Add Options</button>
+      </form>
+<!----------
           <div class = "option">
             <div class="example-container">
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="example-full-width;">
                 <mat-checkbox>
-                <mat-label></mat-label>
+                <mat-label>OPTION</mat-label>
             </mat-checkbox>
                   <input matInput>
               </mat-form-field>
-    
+  ------>  
 
 <!------------------
     <div class="bluebutton">
