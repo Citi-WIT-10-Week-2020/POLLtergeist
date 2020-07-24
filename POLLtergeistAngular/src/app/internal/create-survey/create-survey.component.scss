@@ -9,7 +9,11 @@
     display: inline-flex;
     justify-content: space-between;
 }
-
+.MC {
+  vertical-align: auto;
+  flex-direction: column;
+ 
+}
 .example-form {
     width: 500px;
     width: 100%;
@@ -44,14 +48,15 @@
 
 .top {
     margin-top: 80px;
+
 }
 
 .right {
-
-   position:absolute;
    right: 135px; 
+   position: absolute; 
+   //scroll-snap-stop: always;
     //margin-left: 250px;
-  // display: inline-block;
+   //display: inline-block;
 
 }
 
@@ -100,4 +105,8 @@
     width: 100px;
     height: 40px; 
     color: white;
+}
+
+body {
+    overflow: auto;
 }
