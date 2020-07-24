@@ -24,18 +24,20 @@ import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './drafts/drafts.component';
 
-//import { MatDatepickerModule, MatDatepickerToggle } from '@angular/material/datepicker';
-//import { MatFormFieldModule } from '@angular/material/form-field';
-//import { MatInputModule } from '@angular/material/input';
-//import { MatNativeDateModule } from '@angular/material/core';
-//import { FormsModule } from '@angular/forms';
+//import {MatDatepickerModule} from '@angular/material/datepicker';
+import{MatInputModule} from '@angular/material/input';
+import{MatNativeDateModule} from '@angular/material/core'
 
 //angular material library
 import { MaterialModule } from './internal/material.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
 import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
-
+//angular material forms
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+import { OptionFormComponent } from './option-form/option-form.component';
+import { NestedOptionComponent } from './nested-option/nested-option.component';
 
 
 
@@ -52,6 +54,8 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
     CreateSurveyComponent,
     SurveysComponent,
     DraftsComponent,
+    OptionFormComponent,
+    NestedOptionComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,9 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
     InternalModule,
     LoginModule,
     AppRoutingModule,
-    MatDatepickerModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,MatInputModule,MatNativeDateModule,
+    //MatDatepickerModule,
     //MatDatepickerToggle,
     //MatFormFieldModule,
     //MatInputModule,

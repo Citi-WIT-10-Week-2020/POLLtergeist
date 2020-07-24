@@ -1,4 +1,4 @@
-button{
+.button{
     border:none;
     border-radius:5px;
     background-color:#001233;
@@ -14,6 +14,24 @@ button{
     top:20px;
     font-family: 'Josefin Sans', sans-serif;
 }
+.submit{
+    border:none;
+    border-radius:5px;
+    background-color:#001233;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 10%;
+    float: right;
+    position: relative;
+    margin: 10px;
+    //left:10;
+    //right:
+    top:20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
 input{
     border:none;
     background-color: #001233;
@@ -29,12 +47,14 @@ input{
     margin: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
+*/
 .calendar{
 float:right;
 position: relative;
 right:20px;
 top:-160px;
 }
+/*
 .button2{
     background-color: #023E7D;
     color: white;
@@ -48,6 +68,7 @@ top:-160px;
     margin: 15px;
     font-family: 'Josefin Sans', sans-serif;
 }
+*/
 p{
     font-family: 'Josefin Sans', sans-serif;
     margin:50px;
@@ -58,8 +79,9 @@ h1{
     text-align: center; 
     margin: 40px 80px;
 }
+
 .rectangle{
-    height: 30px;
+    height: 50px;
     //top: 20px;
     width: 400px;
     //text-align: justify;
@@ -68,6 +90,7 @@ h1{
     border-radius: 5px;
     background-color: #023E7D;
 }
+
 .bluebutton{
     //margin: 30px;
     padding-left: 40px;
@@ -90,10 +113,16 @@ h1{
 }
 .rectangle2{
     background-color:#C4C4C4;
-    //height:100px;
+    width: 90%;
+    padding-top:200px;
+    padding-left: 10px;
     border-radius: 5px;
-    //height: 250px;
-    margin: 40px;
+    height: 450px;
+    margin:auto;
+    margin-top: 10px;
+    //margin-bottom: auto;
+    //margin: 50px;
+    
 }
 .center{
   display: block;
@@ -101,4 +130,55 @@ h1{
   margin-left: 50%;
   margin-right: auto;
   //width: 10%;
+}
+.deadline{
+float:right;
+position: relative;
+//margin-left: 45%;
+right:110px;
+//margin:30px 50px;
+top:-100px;
+}
+.title{
+    background-color:#023E7D;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    max-width: 500px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 12px;
+    position: relative;
+    //left:80;
+    top:-200px;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.question{
+    background-color:#023E7D;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 60px;
+    width: 450px;
+    //max-width: 500px;
+    //overflow: hidden;
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 12px;
+    position: relative;
+    //left:80;
+    top:-200px;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.option{
+    display: inline-block;
+    margin:10px;
+    padding:60px;
+    position: relative;
+    background-color: #001233;
 }
