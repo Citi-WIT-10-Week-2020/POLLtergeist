@@ -1,35 +1,79 @@
+
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button type="button">save as draft</button>
-    <input type="submit" value="submit">
+  
+    <button class="button">save as draft</button>
+    <button class="submit">submit</button>
+
 <p style="text-align: left; top:10px; margin: 15px 20px -30px;font-size:25px;">click to edit:</p>
+  <!----------
     <button type="button" class="button2"> Title of New Poll </button>
-<p style="text-align: right; margin: 100px 100px;font-size:25px">Choose Deadline:</p> 
+------>
+    <p style="text-align: right;margin:100px 100px;font-size:25px;">Choose a Deadline</p> 
 
+<div class= "deadline">
+<mat-form-field>
+    <input matInput [matDatepicker]="myDatepicker" placeholder="">
+    <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+    <mat-datepicker #myDatepicker></mat-datepicker>
+  </mat-form-field>
+</div>
 
-    <div class="calendar">
-        
-<body>
+    <form class="example-form">
+        <div class = "title">
+        <mat-form-field class="example-container">
+          <mat-label style="color:white">Title for New Poll</mat-label>
+          <textarea matInput placeholder="Ex. Poll 1"></textarea>
+        </mat-form-field>      
+    </div>
+    </form>
 
-<form action="/action_page.php">
-  <label for="deadline">Deadline:</label>
-  <input type="date" id="deadline" name="deadline">
-  <input type="submit">
-</form>
+    <div class="rectangle2">
+    <div class = "question">
+        <div class="example-container">
+          <mat-form-field class="example-full-width">
+            <mat-label style="color:white">Question 1</mat-label>
+              <input matInput>
+          </mat-form-field>
+        </div>
 
-</body>
+        <form [formGroup]="myForm">
+        <div formArrayName="option">
+          <div *ngFor ="let option of optionForms.controls; let i=index" [formGroupName]="i">
+            <mat-form-field>
+              <input matInput placeholder = "option" formControlName="option">
+            </mat-form-field>
 
-    <img src="/assets/img/calendar.png" width="60" height="60">
+            <button mat-raised-button color="warn" (click)="deleteOption(i)">Delete</button>
+          </div>
+
+        </div>
+    <button mat-raised-button color="primary" (click)="addOption()">Add Options</button>
+      </form>
+
+    <div class="checkxmark">
+        <input type="image" src="assets/img/checkmark.png" alt="Submit" width="52" height="52">
+        <input type="image" src="assets/img/x_mark.png" alt="Delete" width="48" height="48">
     </div>
 
-<div class="rectangle2">
-<div class="question">
-    <div class="rectangle">
-    <h1>Question 1</h1>
+    <div class="plus">
+      <input type="image" src="/assets/img/plus_sign.png" width="35" height="48">
     </div>
+    
+<!----------
+          <div class = "option">
+            <div class="example-container">
+              <mat-form-field class="example-full-width;">
+                <mat-checkbox>
+                <mat-label>OPTION</mat-label>
+            </mat-checkbox>
+                  <input matInput>
+              </mat-form-field>
+  ------>  
 
+<!------------------
     <div class="bluebutton">
     <img src="/assets/img/blue_button.png" width="30" height="40">
     </div>
@@ -82,3 +126,4 @@
 <img src="/assets/img/plus_sign.png" width="40" height="50" class="center">
 
 </body>
+------->
