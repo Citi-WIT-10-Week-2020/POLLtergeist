@@ -13,6 +13,7 @@ import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
 
 export class CreateSurveyComponent implements OnInit {
   
+  sucess:boolean = false;
   surveyForm:FormGroup;
   constructor(private elementRef: ElementRef, private fb: FormBuilder) { }
 
@@ -70,4 +71,8 @@ export class CreateSurveyComponent implements OnInit {
     this.clForms.removeAt(i);
   }
 
+
+  submission() {
+    this.sucess = true; 
+  }
 }

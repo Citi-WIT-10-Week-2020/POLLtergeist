@@ -1,3 +1,4 @@
+<div *ngIf="!sucess">
 <form [formGroup] = "surveyForm">
   <!-- Value: {{surveyForm.value|json}} -->
 <hr>
@@ -23,38 +24,6 @@
       </mat-form-field>
     </div>
   </div>
-  
-<div formArrayName = "multipleChoice">
-  <div *ngFor = "let mc of mcForms.controls; let i = index" [formGroupName] ="i">
-    <!-- question 2 : multiple choice  -->
-  <div class = "top"></div>
-
-    <div class = "question">
-        <div class="example-container">
-          <mat-form-field style= "width: 600px;" appearance="fill">
-            <mat-label>Title of Question 2</mat-label>
-            <input matInput>
-          </mat-form-field>
-   
-<br>
-
-<!-- answer choices  -->
-          <div class = "MC">
-            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
-            <br>
-            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
-            <br>
-           <!-- <button mat-icon-button (click) = "addOption()"> -->
-            <mat-icon>add_box icon</mat-icon>
-            <!-- </button> -->
-          </div>
-        </div>
-        <button mat-raised-button color = "warn" (click) = "deleteMC(i)">Delete</button>
-    </div>
-<!-- below divs close array and form group -->
-  </div>
-</div>
-<!-- above divs close array and form group -->
 
 <div formArrayName = "freeResponse">
   <div *ngFor = "let frq of frqForms.controls; let i = index" [formGroupName]= "i">
@@ -88,6 +57,37 @@
 </div>
 <!-- don't delete above divs -->
 <!-- button to add -->
+<div formArrayName = "multipleChoice">
+  <div *ngFor = "let mc of mcForms.controls; let i = index" [formGroupName] ="i">
+    <!-- question 2 : multiple choice  -->
+  <div class = "top"></div>
+
+    <div class = "question">
+        <div class="example-container">
+          <mat-form-field style= "width: 600px;" appearance="fill">
+            <mat-label>Title of Question 2</mat-label>
+            <input matInput>
+          </mat-form-field>
+   
+<br>
+
+<!-- answer choices  -->
+          <div class = "MC">
+            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
+            <br>
+            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
+            <br>
+           <!-- <button mat-icon-button (click) = "addOption()"> -->
+            <mat-icon>add_box icon</mat-icon>
+            <!-- </button> -->
+          </div>
+        </div>
+        <button mat-raised-button color = "warn" (click) = "deleteMC(i)">Delete</button>
+    </div>
+<!-- below divs close array and form group -->
+  </div>
+</div>
+<!-- above divs close array and form group -->
 
 <div formArrayName = "checkList">
   <div *ngFor = "let cl of clForms.controls; let i = index" [formGroupName] ="i">
@@ -142,4 +142,14 @@
 
 </div>
 
+<div class = "top"></div>
+ <div class = "center">
+    <button  id='submit'>
+      <span (click) = "submission()">Submit</span>
+    </button>
+ </div>
+
 </form>
+</div>
+
+<div class = "submitted" *ngIf = "sucess"> You have successfully created a survey!</div>
