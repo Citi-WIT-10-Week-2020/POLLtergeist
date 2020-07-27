@@ -4,10 +4,16 @@
     text-align: center;
 }
 
+hr {
+  clear: both;
+  visibility: hidden;
+}
+
 //inline elements 
 .layoutIn {
     display: inline-flex;
     justify-content: space-between;
+    vertical-align: bo;
 }
 .MC {
   vertical-align: auto;
@@ -34,7 +40,7 @@
       color: white; 
       border-radius: 12px;
       height: 80px;
-      width: 400px;
+      width: 1000px;
       max-width: 500px;
       overflow: hidden; 
       display: inline-block;
@@ -63,11 +69,15 @@
 .question {
    // min-width: 150px;
   //  max-width: 500px;
-    width: 400px; 
-    width: 100%;
+    width: 800px; 
+   // width: 100%;
+    height: auto; 
     margin-left: 50px; 
     overflow: hidden; 
     display: inline-block;
+    background-color: lightblue;
+    border-radius: 9px;
+    padding: 30px; 
 }
 
 
@@ -108,5 +118,5 @@
 }
 
 body {
-    overflow: auto;
+    overflow: hidden;
 }

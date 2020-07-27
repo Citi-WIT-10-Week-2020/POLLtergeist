@@ -46,16 +46,15 @@ $("#div_" + deleteindex).remove();
 
 </script>
 -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("button").click(function() {
-            alert("Hello world!");
-        });
-    });
+
 </script>
 
 </head>
+
+<!-- everything is in the formGroup -->
+<form [formGroup] = "surveyForm">
+
+Value: {{surveyForm.value|json}}
 
 <body>
 <!-- background color of form -->
@@ -64,14 +63,14 @@ $("#div_" + deleteindex).remove();
 
 <!-- aligns title and date picker -->
 <div class = "layoutIn">
-<form class = "example-form">
+<div class = "example-form">
     <div class = "rectangle">
       <mat-form-field class="example-full-width">
        <mat-label>Title of Survey</mat-label>
           <textarea matInput placeholder="Ex. Survey1"></textarea>
       </mat-form-field>
     </div>
-</form>
+  </div>
 
 <!-- choose date for deadline -->
   <div class = "right">
@@ -178,7 +177,7 @@ $("#div_" + deleteindex).remove();
 
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
-          <span (click) = "addFreeResponse()"> Free Response</span>
+          <span> Free Response</span>
       </button>
       <button mat-menu-item>
        <span>Multiple Choice</span>
@@ -194,7 +193,7 @@ $("#div_" + deleteindex).remove();
 <br>
 <br>
 
- <!-- <div class = "top"></div>
+<div class = "top"></div>
  <div class = "center">
     <button  id='submit'>
       <span>Submit</span>
@@ -204,8 +203,8 @@ $("#div_" + deleteindex).remove();
 <br>
 
 </div>
-</body>
 
+</form>
 
 
 <!-- number clicks/total questions x 100 equals progress -->
