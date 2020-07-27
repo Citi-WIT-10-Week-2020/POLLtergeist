@@ -1,12 +1,28 @@
 <!-- navy square goes here-->
-<div>
+<div class = "navySquare">
     <h1>sign up</h1>
     <p>employer id</p>
     <!--TEXT BOX TO TYPE ID HERE-->
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+      </form>
     <p>employer passcode</p>
     <!--TEXT BOX TO TYPE PASS HERE-->
 
 
     <!--CREATE ACCOUNT BUTTON HERE-->
-    <button mat-stroked-button>Basic</button>
+    <div class="button">
+        <nav>   
+            <a class="buttonText" routerLink="/createaccount">create account</a>
+        </nav>
+    </div>
+
 </div>

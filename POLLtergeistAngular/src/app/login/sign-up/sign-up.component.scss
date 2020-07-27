@@ -1,4 +1,4 @@
-div {
+.navySquare {
     background-color: #001845;
     border-radius: 30px;
     position: absolute;
@@ -9,6 +9,20 @@ div {
     padding: 50px;
     margin: 20px;
   }
+
+.button {
+
+  background: #0466C8;
+  border-radius: 10px;
+  border: none;
+}
+
+.buttonText {
+  color: #FFFFFF;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+}
 
 h1 {
     text-align: center;

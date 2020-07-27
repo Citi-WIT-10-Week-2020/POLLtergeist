@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 
 
-
 @NgModule({
   declarations: [
 
@@ -12,7 +11,8 @@ import { CommonModule } from '@angular/common';
 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
   ]
 })
 export class LoginModule { }
