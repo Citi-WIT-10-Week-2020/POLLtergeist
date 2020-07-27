@@ -1,0 +1,44 @@
+div {
+    background-color: #001845;
+    border-radius: 30px;
+    position: absolute;
+    width: 890px;
+    height: 653px;
+    left: 275px;
+    top: 170px;
+    padding: 50px;
+    margin: 20px;
+  }
+
+h1 {
+    text-align: center;
+
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+p {
+    text-align: left;
+
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 2em;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
