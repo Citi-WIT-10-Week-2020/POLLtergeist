@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from 'src/app/services/header.service';
 import { InternalheaderService } from 'src/app/services/internalheader.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-polls',
@@ -9,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./polls.component.scss','../sharedinternal/sharedinternal.component.scss']
 })
 export class PollsComponent implements OnInit {
+  router: any;
   
   titlePage: string = "Polls";
   type: string = "Poll"; 
@@ -19,7 +19,7 @@ export class PollsComponent implements OnInit {
   //{sampleName: "poll11"}, {sampleName: "poll12"}
   ];
 
-  constructor(private router: Router, public internalNav: InternalheaderService, public nav: HeaderService) { }
+  constructor(public internalNav: InternalheaderService, public nav: HeaderService) { }
 
   ngOnInit(): void {
     this.nav.hide(); //hides homepage navbar
@@ -27,7 +27,8 @@ export class PollsComponent implements OnInit {
   }
  
   onNew(){
-    this.router.navigate(['pollspage']);
+    alert("route to new poll template");
+    //this.router.navigate(['newpoll']);
   }
 
   onExisting(){
@@ -40,7 +41,7 @@ export class PollsComponent implements OnInit {
     var target = event.target || event.srcElement || event.currentTarget; 
     target.style.backgroundColor= '#023E7D';
     target.style.color = '#FFFFFF'
-   // alert("route to poll");
+    alert("route to poll");
     //will pass in link to poll and redirect to the poll
   }
 

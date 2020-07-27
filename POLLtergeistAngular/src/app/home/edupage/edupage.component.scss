@@ -6,12 +6,10 @@ body{
 }
 
 p{
-  font-size: 2.5vw;
-  padding-bottom: 2em;
-  text-align: center;
-  right: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  //font-size: 2em
+    text-align: center;
+    font-weight: normal; 
+    font-family: "Josepfin Sans", "san serif";
+    font-size: 35px; 
 
 }
 
@@ -22,17 +20,10 @@ p{
     width: 30%;
 }
 
-
 .heading {
    text-align: center;
-   padding: 1em;
-   //padding-bottom: 1em;
-  text-align: center;
    font-family: 'Jolly Lodger', cursive;
-   color: #001233;
-   text-transform: lowercase;
-   //font-size: 3.5em
-  font-size: 4.5vw;
+   font-size: 60px;
 }
 
 .image-edu {

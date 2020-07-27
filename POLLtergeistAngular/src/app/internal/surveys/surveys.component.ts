@@ -30,6 +30,7 @@ ngOnInit(): void {
 }
 
 onNew(){
+alert("route to new survey template");
  this.router.navigate(['newSurvey']);
 }
 
