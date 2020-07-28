@@ -1,21 +1,27 @@
-<!-- navy square goes here-->
 <div class = "navySquare">
     <h1>sign up</h1>
     <p>employer id</p>
-    <!--TEXT BOX TO TYPE ID HERE-->
-    <textarea matInput formControlName=“answer”></textarea>
-    <p>employer passcode</p>
-    <!--TEXT BOX TO TYPE PASS HERE-->
-<mat-form-field appearance="fill">
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
+    <!--TEXT BOX TO TYPE ID-->
+    <div class = "whiteSquare">
+      <mat-form-field value="accent" appearance="fill">
+        <input matInput>
+      </mat-form-field>
+    </div>
+      <p style="padding-top: .5em">employer passcode</p>
+      <!--TEXT BOX TO TYPE PASS-->
+      <div class = "whiteSquare">
+        <mat-form-field value="accent" appearance="fill">
+          <input matInput>
+        </mat-form-field>
+      </div>
 
-    <!--CREATE ACCOUNT BUTTON HERE-->
-    <div class="button">
-        <nav>   
-            <a class="buttonText" routerLink="/createaccount">create account</a>
-        </nav>
+    <!--CREATE ACCOUNT BUTTON-->
+    <div class="buttonPadding">
+      <div class="button">
+          <nav>   
+              <a class="buttonText" routerLink="/createaccount">create account</a>
+          </nav>
+      </div>
     </div>
 
 </div>
