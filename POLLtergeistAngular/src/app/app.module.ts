@@ -27,6 +27,7 @@ import { InternalheaderComponent } from './internal/internalnavbar/internalheade
 import { DraftsComponent } from './drafts/drafts.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
 
 
 //import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -57,7 +58,8 @@ import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@ang
     InternalheaderComponent,
     DraftsComponent,
     LoginPageComponent,
-    SignUpComponent
+    SignUpComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +92,8 @@ import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@ang
                           {path: 'surveys', component: SurveysComponent},
                           {path: 'newSurvey', component: CreateSurveyComponent},
                           {path: 'login', component: LoginPageComponent},
-                          {path: 'signup', component: SignUpComponent}])
+                          {path: 'signup', component: SignUpComponent},
+                          {path: 'createaccount', component: CreateAccountComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]

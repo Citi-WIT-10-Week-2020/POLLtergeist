@@ -1,21 +1,29 @@
-<!-- navy square goes here-->
 <div class = "navySquare">
     <h1>login</h1>
-    <p>email</p>
-    <!--TEXT BOX TO TYPE ID HERE-->
     
-    <p>password</p>
-    <!--TEXT BOX TO TYPE PASS HERE-->
-    <mat-form-field appearance="fill">
-      <mat-label>Input</mat-label>
-      <input matInput>
-    </mat-form-field>
+    <p>email</p>
+    <!--TEXT BOX TO TYPE ID-->
+    <div class = "whiteSquare">
+      <mat-form-field value="accent" appearance="fill">
+        <input matInput>
+      </mat-form-field>
+    </div>
 
-    <!--CREATE ACCOUNT BUTTON HERE-->
-    <div class="button">
-        <nav>   
-            <a class="buttonText" routerLink="/polls">login</a>
-        </nav>
+    <p style="padding-top: .5em">password</p>
+    <!--TEXT BOX TO TYPE PASS-->
+    <div class = "whiteSquare">
+      <mat-form-field value="accent" appearance="fill">
+        <input matInput>
+      </mat-form-field>
+    </div>
+
+    <!--CREATE ACCOUNT BUTTON-->
+    <div class="buttonPadding">
+      <div class="button">
+          <nav>   
+              <a class="buttonText" routerLink="/polls">login</a>
+          </nav>
+      </div>
     </div>
 
 </div>
