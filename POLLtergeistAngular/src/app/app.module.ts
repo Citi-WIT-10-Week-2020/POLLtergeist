@@ -29,6 +29,20 @@ import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 
 
+//import {MatDatepickerModule} from '@angular/material/datepicker';
+import{MatInputModule} from '@angular/material/input';
+import{MatNativeDateModule} from '@angular/material/core'
+
+//angular material library
+import { AngularMaterialModule } from 'src/app/login/angular-material.module';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
+import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
+//angular material forms
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -53,6 +67,18 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,MatInputModule,MatNativeDateModule,
+    //MatDatepickerModule,
+    //MatDatepickerToggle,
+    //MatFormFieldModule,
+    //MatInputModule,
+    //MatNativeDateModule,
+    //FormsModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
+    MatCheckboxModule,
+    FormsModule,
 
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path: 'education', component: EdupageComponent},
