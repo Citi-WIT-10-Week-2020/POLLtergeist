@@ -97,19 +97,22 @@ h1{
     float: left;
 }
 .plus{
-    padding-left: 40px;
-    //margin-bottom:5px;
-    float: left;
-    margin:-20px -30px;
+    //padding-left: 100px;
+    position: relative;
+    margin-bottom:-50px;
+    //float: inline;
+    //margin:-20px -30px;
     //padding-bottom: 45px;
-    //padding-top: 25px;
+    padding-top: 25px;
 }
 .checkxmark{
     float: right;
     position: relative; 
-    margin-right: 200px;
+    //margin: -20px -30px;
+    margin-right: -600px;
+    //padding-left:10px;
     //margin-left: 20px;
-    top:-200px;
+    //top:-200px;
 }
 .rectangle2{
     background-color:#C4C4C4;
@@ -117,7 +120,7 @@ h1{
     padding-top:200px;
     padding-left: 10px;
     border-radius: 5px;
-    height: 450px;
+    height: 45%;
     margin:auto;
     margin-top: 10px;
     //margin-bottom: auto;
@@ -182,3 +185,4 @@ top:-100px;
     position: relative;
     background-color: #001233;
 }
+
