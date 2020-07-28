@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeaderService } from 'src/app/services/header.service';
 import { InternalheaderService } from 'src/app/services/internalheader.service';
-import {MatInputModule} from '@angular/material/input';
-
+import { AngularMaterialModule } from 'src/app/login/angular-material.module';
 
 @Component({
   selector: 'app-sign-up',
