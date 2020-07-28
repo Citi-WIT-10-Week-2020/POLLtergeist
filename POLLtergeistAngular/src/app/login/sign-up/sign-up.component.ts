@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { HeaderService } from 'src/app/services/header.service';
 import { InternalheaderService } from 'src/app/services/internalheader.service';
 import { AngularMaterialModule } from 'src/app/login/angular-material.module';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-sign-up',

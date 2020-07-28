@@ -53,6 +53,7 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserAnimationsModule,
+
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path: 'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
