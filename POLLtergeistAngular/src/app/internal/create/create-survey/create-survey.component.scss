@@ -4,6 +4,24 @@
     text-align: center;
 }
 
+.example-form {
+  width: 500px;
+  width: 100%;
+  margin-left: 50px; 
+  overflow: hidden; 
+  display: inline-block;
+}
+
+.surveyTitle{
+  width: 800px;
+  padding: 6px;
+
+}
+
+body {
+  overflow: hidden;
+}
+
 hr {
   clear: both;
   visibility: hidden;
@@ -13,57 +31,58 @@ hr {
 .layoutIn {
     display: inline-flex;
     justify-content: space-between;
-    vertical-align: bo;
+    vertical-align: bottom;
 }
+
 .MC {
   vertical-align: auto;
   flex-direction: column;
  
 }
-.example-form {
-    width: 500px;
-    width: 100%;
-    margin-left: 50px; 
-    overflow: hidden; 
-    display: inline-block;
-  }
 
-  //does not do anything
-  .mat-form-field-label{
+//does not do anything
+.mat-form-field-label{
     color:white !important;
-  }
+}
 
 
-  //rectangle for survey title
-  .rectangle {
-      background-color: #4072AD;
+//rectangle for survey title
+.rectangle {
+      background-color: #023E7D;
       color: white; 
       border-radius: 12px;
-      height: 80px;
-      width: 1000px;
+      height: 100px;
+      width: auto;
       max-width: 500px;
       overflow: hidden; 
       display: inline-block;
       padding: 10px; 
 
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
+}
 
 .top {
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+.inBetweenSpace {
+  margin-right: 15px; 
 
 }
 
 .right {
    right: 135px; 
    position: absolute; 
+   margin-top: 15px;
+   display: inline-block;
+
    //scroll-snap-stop: always;
     //margin-left: 250px;
    //display: inline-block;
+}
 
+.center {
+  margin: auto; 
+  text-align: center; 
 }
 
 .question {
@@ -75,8 +94,8 @@ hr {
     margin-left: 50px; 
     overflow: hidden; 
     display: inline-block;
-    background-color: lightblue;
-    border-radius: 9px;
+    background-color:#C4C4C4;
+    border-radius: 6px;
     padding: 30px; 
 }
 
@@ -101,24 +120,34 @@ hr {
 
 }
 
-.center {
-    margin: auto; 
-    text-align: center; 
+.questionTitle {
+  background-color: #023E7D;
+  color: white; 
+  padding: 5px;
+  border-radius: 6px; 
+  width:auto;
+  height:auto; 
 }
-
 
 //submit button
 #submit {
-    border-radius: 10px; 
-    border-color: #4072AD ;
-    background-color: #4072AD ;
-    width: 100px;
-    height: 40px; 
-    color: white;
+  border-radius: 10px; 
+  border-color: #001233 ;
+  background-color: #001233 ;
+  width: 140px;
+  height: 50px; 
+  color: white;
 }
 
-body {
-    overflow: hidden;
+#toDrafts {
+
+  border-radius: 10px; 
+  border-color: #001233 ;
+  background-color: #001233 ;
+  width: 140px;
+  height: 50px; 
+  color: white;
+
 }
 
 .submitted {

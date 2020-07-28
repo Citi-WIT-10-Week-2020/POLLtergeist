@@ -1,15 +1,34 @@
+Value : {{surveyForm.value | json }}
 <div *ngIf="!sucess">
 <form [formGroup] = "surveyForm">
   <!-- Value: {{surveyForm.value|json}} -->
 <hr>
 
+<div class = "top"></div>
+
+ <div class = "right">
+  <button  class = "inBetweenSpace" id='toDrafts'>
+    <span (click) = "drafts()">Save to Drafts</span>
+  </button>
+    <button  id='submit'>
+      <span (click) = "submission()">Submit</span>
+    </button>
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
 <!-- title and date picker aligned on the same line -->
 <div class = "layoutIn">
   <div class = "example-form">
       <div class = "rectangle">
-        <mat-form-field class="example-full-width">
-         <mat-label>Title of Survey</mat-label>
-            <textarea matInput placeholder="Ex. Survey1"></textarea>
+        <mat-form-field class="surveyTitle">
+         <mat-label style="color:white;">Title of Survey</mat-label>
+            <textarea style = "font-size: 30px;" formControlName="title" matInput placeholder="Ex. Survey1"></textarea>
         </mat-form-field>
       </div>
     </div>
@@ -17,10 +36,10 @@
   <!-- choose date for deadline -->
     <div class = "right">
       <mat-form-field appearance="fill">
-        <mat-label>Choose a date</mat-label>
-          <input matInput [matDatepicker]="picker">
+        <mat-label>Choose a deadline</mat-label>
+          <input formControlName="date" matInput [matDatepicker]="picker">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
+          <mat-datepicker #picker ></mat-datepicker>
       </mat-form-field>
     </div>
   </div>
@@ -34,18 +53,20 @@
 
     <div class = "question">
         <div class="example-container">
-          <mat-form-field style= "width: 600px;" appearance="fill">
-           <mat-label>Title of Question 1</mat-label>
-            <input matInput>
+          <mat-form-field  class = "questionTitle" style= "width: 600px;" appearance="fill">
+           <mat-label style = "color:white;">Title of Question 1</mat-label>
+            <input matInput formControlName="questionTitle">
           </mat-form-field>
    
+<br>
+<br>
 <br>
 
 <!-- answer to question 1  -->
           <mat-form-field  style = "width: 500px;" appearance="outline">
               <div class = "txtArea">
-                <textarea matInput></textarea>
-              </div>
+                <textarea matInput formControlName="answer"></textarea>
+              </div> 
            </mat-form-field>
         </div>
 
@@ -56,7 +77,7 @@
   </div>
 </div>
 <!-- don't delete above divs -->
-<!-- button to add -->
+
 <div formArrayName = "multipleChoice">
   <div *ngFor = "let mc of mcForms.controls; let i = index" [formGroupName] ="i">
     <!-- question 2 : multiple choice  -->
@@ -64,7 +85,7 @@
 
     <div class = "question">
         <div class="example-container">
-          <mat-form-field style= "width: 600px;" appearance="fill">
+          <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
             <mat-label>Title of Question 2</mat-label>
             <input matInput>
           </mat-form-field>
@@ -73,13 +94,15 @@
 
 <!-- answer choices  -->
           <div class = "MC">
+            <div formArrayName = "answer">
+              <div *ngFor = "let answer of answerArray.controls; let k = index" [formGroupName] = "k">
             <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
             <br>
-            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
-            <br>
-           <!-- <button mat-icon-button (click) = "addOption()"> -->
+            </div>
+            </div>
+            <button mat-icon-button (click) = "addAnswer()"> 
             <mat-icon>add_box icon</mat-icon>
-            <!-- </button> -->
+            </button>
           </div>
         </div>
         <button mat-raised-button color = "warn" (click) = "deleteMC(i)">Delete</button>
@@ -97,7 +120,7 @@
 
     <div class = "question">
       <div class="example-container">
-         <mat-form-field style= "width: 600px;" appearance="fill">
+         <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
             <mat-label>Title of Question 3</mat-label>
             <input matInput>
            </mat-form-field>
@@ -141,14 +164,6 @@
     </mat-menu>
 
 </div>
-
-<div class = "top"></div>
- <div class = "center">
-    <button  id='submit'>
-      <span (click) = "submission()">Submit</span>
-    </button>
- </div>
-
 </form>
 </div>
 

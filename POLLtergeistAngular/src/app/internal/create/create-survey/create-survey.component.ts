@@ -2,6 +2,8 @@ import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { newSurvey } from './newSurvey';
 import { MaterialModule } from '../../material.module';
 import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { InternalheaderService } from 'src/app/services/internalheader.service';
 
 
 @Component({
@@ -15,11 +17,14 @@ export class CreateSurveyComponent implements OnInit {
   
   sucess:boolean = false;
   surveyForm:FormGroup;
-  constructor(private elementRef: ElementRef, private fb: FormBuilder) { }
+  constructor(public internalNav: InternalheaderService, private fb: FormBuilder, private router: Router) { }
 
 
   ngOnInit(): void {
+    this.internalNav.show(); 
     this.surveyForm= this.fb.group({
+      title: "",
+      date: "",
       freeResponse: this.fb.array([]),
       multipleChoice: this.fb.array([]),
       checkList: this.fb.array([])
@@ -41,9 +46,14 @@ export class CreateSurveyComponent implements OnInit {
     return this.surveyForm.get('freeResponse') as FormArray
   }
 
+  get answerArray() {
+    return this.mcForms.get("answer") as FormArray
+  }
+
   addFRQ(){
     const newFRQ = this.fb.group({
-      answer:[]
+      questionTitle:"",
+      answer: ""
     })
     this.frqForms.push(newFRQ);
   }
@@ -53,7 +63,8 @@ export class CreateSurveyComponent implements OnInit {
 
   addMC(){
     const newMC = this.fb.group({
-      answer:[]
+      questionTitle: "",
+      answer: []
     })
     this.mcForms.push(newMC);
   }
@@ -61,9 +72,18 @@ export class CreateSurveyComponent implements OnInit {
     this.mcForms.removeAt(i);
   }
 
+  addAnswer() {
+    const newOpt = this.fb.group ({
+      choice: ""
+    })
+
+    this.answerArray.push(newOpt);
+  }
+
   addCL(){
     const newCL = this.fb.group({
-      answer:[]
+      questionTitle:"",
+      answer: this.fb.array([])
     })
     this.clForms.push(newCL);
   }
@@ -71,7 +91,9 @@ export class CreateSurveyComponent implements OnInit {
     this.clForms.removeAt(i);
   }
 
-
+  drafts() {
+    this.router.navigate(['drafts']);
+  }
   submission() {
     this.sucess = true; 
   }
