@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {MatInputModule, MatOptionModule, MatSelectModule, MatIconModule} from '@angular/material';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { HomepageModule } from './home/homepage/homepage.module';
 import { InternalModule } from './internal/internal.module';
@@ -55,9 +53,6 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserAnimationsModule,
-      MatInputModule, MatOptionModule, MatSelectModule, MatIconModule,
-      FormsModule,
-      ReactiveFormsModule,
     RouterModule.forRoot([{path: '', component: HomepageComponent}, 
                           {path: 'education', component: EdupageComponent},
                           {path: '***', component: HomepageComponent },
