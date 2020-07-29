@@ -145,6 +145,7 @@ right:110px;
 //margin:30px 50px;
 top:-100px;
 }
+
 .title{
     background-color:#023E7D;
     color: white;
@@ -152,9 +153,9 @@ top:-100px;
     text-align: center;
     height: 80px;
     width: 200px;
-    max-width: 500px;
-    overflow: hidden;
-    display: inline-block;
+    //max-width: 500px;
+    //overflow: hidden;
+    //display: inline-block;
     padding: 10px; 
     border-radius: 12px;
     position: relative;
@@ -163,6 +164,7 @@ top:-100px;
     margin: 15px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .question{
     background-color:#023E7D;
     color: white;
@@ -188,5 +190,4 @@ top:-100px;
     position: relative;
     background-color: #001233;
 }
-.form-group{
-}
+

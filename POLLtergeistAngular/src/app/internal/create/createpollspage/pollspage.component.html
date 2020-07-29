@@ -22,7 +22,9 @@
 </div>
 
  <!----- This creates the title for a new poll><------>
+
 <form [formGroup]="myForm">
+  <div class = "title">
   <div class="form-group">
     <label for="title">Title of New Poll</label>
     <input type="text"
@@ -32,6 +34,7 @@
            name="title"
            formControlName="title"
            required>
+  </div>
   </div>
   <!------- add and delete question><----->
   <button style="margin-top:5px; margin-bottom:5px;" type="button" class="btn btn-primary btn-sm" (click)="addNewQuestion()">
@@ -99,78 +102,3 @@
 
  <pre>{{myForm.value | json}}</pre>
 
-<!----------
-    <div class="checkxmark">
-        <input type="image" src="assets/img/checkmark.png" alt="Submit" width="52" height="52">
-        <input type="image" src="assets/img/x_mark.png" alt="Delete" width="48" height="48">
-    </div>
-
-    <div class="plus">
-      <input type="image" src="/assets/img/plus_sign.png" width="35" height="48">
-    </div>
- ------>   
-<!----------
-          <div class = "option">
-            <div class="example-container">
-              <mat-form-field class="example-full-width;">
-                <mat-checkbox>
-                <mat-label>OPTION</mat-label>
-            </mat-checkbox>
-                  <input matInput>
-              </mat-form-field>
-  ------>  
-
-<!------------------
-    <div class="bluebutton">
-    <img src="/assets/img/blue_button.png" width="30" height="40">
-    </div>
-
-    <p>Option 1</p>
-
-    <div class="bluebutton">
-    <img src="/assets/img/blue_button.png" width="30" height="40">
-    </div>
-
-    <p>Option 2</p>
-
-        <div class="plus"><img src="/assets/img/plus_sign.png" width="30" height="40"></div>
-        <p>Add another option</p>
-</div>
-</div>
-
-<div class="checkxmark">
-<img src="/assets/img/checkmark.png" width="70" height="70">
-<img src="/assets/img/x_mark.png" width="70" height="70">
-</div>
-
-<div class="rectangle2">
-<div class="question">
-    <div class="rectangle">
-    <h1>Question 2</h1>
-    </div>
-
-    <div class="bluebutton">
-    <img src="/assets/img/blue_button.png" width="30" height="40">
-    </div>
-
-    <p>Option 1</p>
-    <div class="bluebutton">
-    <img src="/assets/img/blue_button.png" width="30" height="40">
-    </div>
-
-    <p>Option 2</p>
-
-    <div class="plus"><img src="/assets/img/plus_sign.png" width="30" height="40"></div>
-    <p>Add another option</p>
-</div>
-
-</div>
-<div class="checkxmark">
-<img src="/assets/img/checkmark.png" width="70" height="70">
-<img src="/assets/img/x_mark.png" width="70" height="70">
-</div>
-
-<img src="/assets/img/plus_sign.png" width="40" height="50" class="center">
-
-</body>
-------->
