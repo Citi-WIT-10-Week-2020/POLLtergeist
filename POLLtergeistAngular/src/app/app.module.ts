@@ -38,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
-import { ValidFormComponent } from './internal/valid-form/valid-form.component';
+import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
+import { AccountComponent } from './internal/account/account.component';
 
 
 
@@ -57,7 +58,8 @@ import { ValidFormComponent } from './internal/valid-form/valid-form.component';
     DraftsComponent,
     OptionFormComponent,
     NestedOptionComponent,
-    ValidFormComponent,
+    ViewpollComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,12 +69,6 @@ import { ValidFormComponent } from './internal/valid-form/valid-form.component';
     AppRoutingModule,
     ReactiveFormsModule,
     MatDatepickerModule,MatInputModule,MatNativeDateModule,
-    //MatDatepickerModule,
-    //MatDatepickerToggle,
-    //MatFormFieldModule,
-    //MatInputModule,
-    //MatNativeDateModule,
-    //FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatCheckboxModule,

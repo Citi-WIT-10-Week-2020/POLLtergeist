@@ -9,6 +9,7 @@ import { PollsComponent } from './internal/polls/polls.component';
 import { SurveysComponent } from './internal/surveys/surveys.component';
 import { CreateSurveyComponent } from './internal/create/create-survey/create-survey.component';
 import { DraftsComponent } from './internal/drafts/drafts.component';
+import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
 
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
@@ -18,6 +19,7 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'aboutus', component:AboutusComponent},
 {path: 'pollspage', component:PollspageComponent},
 {path:"polls", component: PollsComponent},
+{path: "viewpoll", component: ViewpollComponent},
 {path: "surveys", component: SurveysComponent},
 {path:"newSurvey", component: CreateSurveyComponent},
 {path: "drafts", component: DraftsComponent}
