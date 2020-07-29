@@ -1,0 +1,162 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.example-section {
+    text-align: center;
+}
+
+.example-form {
+  width: 500px;
+  width: 100%;
+  margin-left: 50px; 
+  overflow: hidden; 
+  display: inline-block;
+}
+
+.surveyTitle{
+  width: 800px;
+  padding: 6px;
+
+}
+
+body {
+  overflow: hidden;
+}
+
+hr {
+  clear: both;
+  visibility: hidden;
+}
+
+//inline elements 
+.layoutIn {
+    display: inline-flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+}
+
+.MC {
+  vertical-align: auto;
+  flex-direction: column;
+ 
+}
+
+//does not do anything
+.mat-form-field-label{
+    color:white !important;
+}
+
+
+//rectangle for survey title
+.rectangle {
+      background-color: #023E7D;
+      color: white; 
+      border-radius: 12px;
+      height: 100px;
+      width: auto;
+      max-width: 500px;
+      overflow: hidden; 
+      display: inline-block;
+      padding: 10px; 
+
+}
+
+.top {
+    margin-top: 50px;
+}
+
+.inBetweenSpace {
+  margin-right: 15px; 
+
+}
+
+.right {
+   right: 135px; 
+   position: absolute; 
+   margin-top: 15px;
+   display: inline-block;
+
+   //scroll-snap-stop: always;
+    //margin-left: 250px;
+   //display: inline-block;
+}
+
+.center {
+  margin: auto; 
+  text-align: center; 
+}
+
+.question {
+   // min-width: 150px;
+  //  max-width: 500px;
+    width: 800px; 
+   // width: 100%;
+    height: auto; 
+    margin-left: 50px; 
+    overflow: hidden; 
+    display: inline-block;
+    background-color:#C4C4C4;
+    border-radius: 6px;
+    padding: 30px; 
+}
+
+
+.txtArea {
+   height: 100px; 
+   width: 500px;
+   overflow: hidden; 
+   display: inline-block;
+
+}
+
+.backgroundForm {
+   width: 90%;
+   height: auto;
+   background-color: #E7F3FF;
+   border: thin;
+   margin: auto;
+   margin-top: 50px; 
+   padding: 20px; 
+   padding-top: 50px;
+
+}
+
+.questionTitle {
+  background-color: #023E7D;
+  color: white; 
+  padding: 5px;
+  border-radius: 6px; 
+  width:auto;
+  height:auto; 
+}
+
+//submit button
+#submit {
+  border-radius: 10px; 
+  border-color: #001233 ;
+  background-color: #001233 ;
+  width: 140px;
+  height: 50px; 
+  color: white;
+}
+
+#toDrafts {
+
+  border-radius: 10px; 
+  border-color: #001233 ;
+  background-color: #001233 ;
+  width: 140px;
+  height: 50px; 
+  color: white;
+
+}
+
+.submitted {
+  position: absolute;
+    width: auto;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px;  
+
+}

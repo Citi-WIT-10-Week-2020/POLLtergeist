@@ -4,10 +4,17 @@ import { HomepageComponent } from './home/homepage/homepage.component';
 import { EdupageComponent } from './home/edupage/edupage.component';
 import { BusinesspackComponent } from './home/businesspack/businesspack.component';
 import { AboutusComponent } from './home/aboutus/aboutus.component';
-import { PollspageComponent } from './internal/createpollspage/pollspage.component';
+import { PollspageComponent } from './internal/create/createpollspage/pollspage.component';
 import { PollsComponent } from './internal/polls/polls.component';
 import { SurveysComponent } from './internal/surveys/surveys.component';
-import { CreateSurveyComponent } from './internal/create-survey/create-survey.component';
+import { CreateSurveyComponent } from './internal/create/create-survey/create-survey.component';
+import { DraftsComponent } from './internal/drafts/drafts.component';
+
+import { LoginPageComponent } from './login/login-page/login-page.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
+
+
 
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
@@ -18,7 +25,11 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'pollspage', component:PollspageComponent},
 {path:"polls", component: PollsComponent},
 {path: "surveys", component: SurveysComponent},
-{path:"newSurvey", component: CreateSurveyComponent}
+{path:"newSurvey", component: CreateSurveyComponent},
+{path: "drafts", component: DraftsComponent},
+{path: 'login', component: LoginPageComponent},
+{path: 'signup', component: SignUpComponent},
+{path: 'createaccount', component: CreateAccountComponent}
 
 ];
 

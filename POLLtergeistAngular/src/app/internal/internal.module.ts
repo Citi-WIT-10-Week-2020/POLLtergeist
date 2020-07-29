@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PollsComponent } from './polls/polls.component';
 import { ClickColorDirective } from './polls/click-color.directive';
 import { MaterialModule } from './material.module';
-import { CreateSurveyComponent } from './create-survey/create-survey.component';
+import { CreateSurveyComponent } from './create/create-survey/create-survey.component';
 import { MatCheckbox } from '@angular/material/checkbox';
 
 

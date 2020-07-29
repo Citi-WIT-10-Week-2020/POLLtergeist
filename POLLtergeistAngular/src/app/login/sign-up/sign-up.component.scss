@@ -1,0 +1,72 @@
+.navySquare {
+    background-color: #001845;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 5em;
+    width: 800px;
+    height: 43.5em;
+    left: 275px;
+    top: 170px;
+    padding: 50px;
+    //margin: 20px;
+  }
+
+.whiteSquare {
+  background-color: white;
+  border-radius: 1em;
+  margin-top: 0em;
+  margin-left: 5em;
+  width: 16.5em;
+  height: 6em;
+  left: 27px;
+  top: 17px;
+  padding: 1em;
+  //margin: 20px;
+}
+
+.buttonPadding{
+  padding: 3em;
+  padding-left: 15em;
+  
+}
+
+.button {
+
+  background: #0466C8;
+  border-radius: 10px;
+  width: 16.5em;
+  height: 6em;
+  border: none;
+}
+
+.buttonText {
+  color: #FFFFFF;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+p {
+    text-align: left;
+
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 2em;
+}
+

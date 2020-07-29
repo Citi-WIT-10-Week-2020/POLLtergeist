@@ -34,8 +34,7 @@ onNew(){
 }
 
 onExisting(){
-alert("route to drafts");
-//this.router.navigate(['drafts']);
+this.router.navigate(['drafts']);
 }
 
 //on click survey square changes color
