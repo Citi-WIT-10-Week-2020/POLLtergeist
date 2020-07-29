@@ -1,4 +1,3 @@
-
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
@@ -40,12 +39,14 @@
   <button style="margin-top:5px; margin-bottom:5px;" type="button" class="btn btn-primary btn-sm" (click)="addNewQuestion()">
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
   </button>
+
   <div formArrayName="questions">
     <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
       <fieldset>
         <legend><h4>Question {{i+1}}:<button style="margin-left:35px;" type="button" class="btn btn-danger" (click)="deleteQuestion(i)">
 <span class="glyphicon glyphicon-minus"aria-hidden="true"></span> Remove Question
 </button>
+
 </h4></legend>
         <div [formGroupName]="i">
           <div class="form-inline">
@@ -62,8 +63,6 @@
               <button style="margin-right:5px;"  type="button" class="btn btn-success btn-sm" (click)="addNewOption(question.controls.options)">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Options
               </button>
-              
-
             </div>
           </div>
           <div class="form-inline">
@@ -93,8 +92,15 @@
         </div>
       </fieldset>
     </div>
-    </form>
+  </div>
 
+    <button type="submit" class="btn btn-success">Submit</button>
+  <button type="button" class="btn btn-basic">Cancel</button>
+</form>
+
+ <pre>{{myForm.value | json}}</pre>
+
+<!--------
     <div class="rectangle2">
     <div class = "question">
         <div class="example-container">
@@ -117,4 +123,4 @@
         </div>
     <button mat-raised-button color="primary" (click)="addOption()">Add Options</button>
       </form>
-
+--->
