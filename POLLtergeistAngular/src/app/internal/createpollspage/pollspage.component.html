@@ -21,38 +21,85 @@
   </mat-form-field>
 </div>
 
-    <form class="example-form">
-        <div class = "title">
-        <mat-form-field class="example-container">
-          <mat-label style="color:white">Title for New Poll</mat-label>
-          <textarea matInput placeholder="Ex. Poll 1"></textarea>
-        </mat-form-field>      
-    </div>
-    </form>
+ <!----- This creates the title for a new poll><------>
+<form [formGroup]="myForm">
+  <div class="form-group">
+    <label for="title">Title of New Poll</label>
+    <input type="text"
+           id="title"
+           class="form-control"
+           placeholder="Title"
+           name="title"
+           formControlName="title"
+           required>
+  </div>
+  <!------- add and delete question><----->
+  <button style="margin-top:5px; margin-bottom:5px;" type="button" class="btn btn-primary btn-sm" (click)="addNewQuestion()">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
+  </button>
+  <div formArrayName="questions">
+    <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
+      <fieldset>
+        <legend><h4>Question {{i+1}}:<button style="margin-left:35px;" type="button" class="btn btn-danger" (click)="deleteQuestion(i)">
+<span class="glyphicon glyphicon-minus"aria-hidden="true"></span> Remove Question
+</button>
+</h4></legend>
+        <div [formGroupName]="i">
+          <div class="form-inline">
+            <div class="form-group">
+              <label style="margin-right:20px;" class="col-form-label" for="question">Question</label>
+              <input type="text"
+                     class="form-control"
+                     id="question"
+                     placeholder="Question"
+                     name="type"
+                     formControlName="question" 
+                     style="margin-right:5px;" 
+                     required>
+              <button style="margin-right:5px;"  type="button" class="btn btn-success btn-sm" (click)="addNewOption(question.controls.options)">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Options
+              </button>
+              
 
-    <div class="rectangle2">
-    <div class = "question">
-        <div class="example-container">
-          <mat-form-field class="example-full-width">
-            <mat-label style="color:white">Question 1</mat-label>
-              <input matInput>
-          </mat-form-field>
-        </div>
-
-        <form [formGroup]="myForm">
-        <div formArrayName="option">
-          <div *ngFor ="let option of optionForms.controls; let i=index" [formGroupName]="i">
-            <mat-form-field>
-              <input matInput placeholder = "option" formControlName="option">
-            </mat-form-field>
-
-            <button mat-raised-button color="warn" (click)="deleteOption(i)">Delete</button>
+            </div>
           </div>
-
+          <div class="form-inline">
+            <div class="form-group">
+              <div formArrayName="options">
+                <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let option of question.get('options').controls; let j=index">
+                  <div [formGroupName]="j">
+                    <div class="form-group">
+                    <label style="margin-right:25px;"  class="col-form-label" for="emailId">Option {{j + 1}}</label>
+                    <input formControlName="option"
+                           class="form-control"
+                           style="margin-right:5px;" 
+                           type="email"
+                           placeholder="Option"
+                           id="option"
+                           name="option"
+                            />
+                 <button style="margin-right:5px;" type="button" class="btn btn-danger btn-sm" (click)="deleteOption(question.controls.options, j)">
+<span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Option</span>
+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    <button mat-raised-button color="primary" (click)="addOption()">Add Options</button>
-      </form>
+      </fieldset>
+    </div>
+  </div>
 
+  
+  <button type="submit" class="btn btn-success">Submit</button>
+  <button type="button" class="btn btn-basic" >Cancel</button>
+</form>
+
+ <pre>{{myForm.value | json}}</pre>
+
+<!----------
     <div class="checkxmark">
         <input type="image" src="assets/img/checkmark.png" alt="Submit" width="52" height="52">
         <input type="image" src="assets/img/x_mark.png" alt="Delete" width="48" height="48">
@@ -61,7 +108,7 @@
     <div class="plus">
       <input type="image" src="/assets/img/plus_sign.png" width="35" height="48">
     </div>
-    
+ ------>   
 <!----------
           <div class = "option">
             <div class="example-container">

@@ -97,19 +97,22 @@ h1{
     float: left;
 }
 .plus{
-    //padding-left: 100px;
-    position: relative;
-    margin-bottom:-50px;
+    padding-left: 700px;
+    text-align: center;
+    display:block;
+    //margin-bottom:-500px;
     //float: inline;
-    //margin:-20px -30px;
+
+    //margin-left:60px;
+    margin:90px -100px;
     //padding-bottom: 45px;
-    padding-top: 25px;
+    //padding-top: 25px;
 }
 .checkxmark{
     float: right;
-    position: relative; 
+    position: absolute; 
     //margin: -20px -30px;
-    margin-right: -600px;
+    //margin-right: -600px;
     //padding-left:10px;
     //margin-left: 20px;
     //top:-200px;
@@ -185,4 +188,5 @@ top:-100px;
     position: relative;
     background-color: #001233;
 }
-
+.form-group{
+}
