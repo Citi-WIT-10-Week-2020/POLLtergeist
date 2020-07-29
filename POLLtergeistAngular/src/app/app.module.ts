@@ -23,6 +23,11 @@ import { CreateSurveyComponent } from './internal/create/create-survey/create-su
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './internal/drafts/drafts.component';
+import { LoginPageComponent } from './login/login-page/login-page.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
+
+
 
 //import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
@@ -58,6 +63,9 @@ import { ValidFormComponent } from './internal/valid-form/valid-form.component';
     OptionFormComponent,
     NestedOptionComponent,
     ValidFormComponent,
+    LoginPageComponent,
+    SignUpComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,12 @@ import { SurveysComponent } from './internal/surveys/surveys.component';
 import { CreateSurveyComponent } from './internal/create/create-survey/create-survey.component';
 import { DraftsComponent } from './internal/drafts/drafts.component';
 
+import { LoginPageComponent } from './login/login-page/login-page.component';
+import { SignUpComponent } from './login/sign-up/sign-up.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
+
+
+
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
 {path:'education', component: EdupageComponent},
@@ -20,7 +26,10 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path:"polls", component: PollsComponent},
 {path: "surveys", component: SurveysComponent},
 {path:"newSurvey", component: CreateSurveyComponent},
-{path: "drafts", component: DraftsComponent}
+{path: "drafts", component: DraftsComponent},
+{path: 'login', component: LoginPageComponent},
+{path: 'signup', component: SignUpComponent},
+{path: 'createaccount', component: CreateAccountComponent}
 
 ];
 
