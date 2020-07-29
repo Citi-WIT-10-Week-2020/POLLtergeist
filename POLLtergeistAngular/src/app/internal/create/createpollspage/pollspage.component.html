@@ -93,12 +93,28 @@
         </div>
       </fieldset>
     </div>
-  </div>
+    </form>
 
-  
-  <button type="submit" class="btn btn-success">Submit</button>
-  <button type="button" class="btn btn-basic" >Cancel</button>
-</form>
+    <div class="rectangle2">
+    <div class = "question">
+        <div class="example-container">
+          <mat-form-field class="example-full-width">
+            <mat-label style="color:white">Question 1</mat-label>
+              <input matInput>
+          </mat-form-field>
+        </div>
 
- <pre>{{myForm.value | json}}</pre>
+        <form [formGroup]="myForm">
+        <div formArrayName="option">
+          <div *ngFor ="let option of optionForms.controls; let i=index" [formGroupName]="i">
+            <mat-form-field>
+              <input matInput placeholder = "option" formControlName="option">
+            </mat-form-field>
+
+            <button mat-raised-button color="warn" (click)="deleteOption(i)">Delete</button>
+          </div>
+
+        </div>
+    <button mat-raised-button color="primary" (click)="addOption()">Add Options</button>
+      </form>
 

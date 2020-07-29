@@ -23,11 +23,6 @@ import { CreateSurveyComponent } from './internal/create/create-survey/create-su
 import { AboutusComponent } from './home/aboutus/aboutus.component';
 import { InternalheaderComponent } from './internal/internalnavbar/internalheader/internalheader.component';
 import { DraftsComponent } from './internal/drafts/drafts.component';
-import { LoginPageComponent } from './login/login-page/login-page.component';
-import { SignUpComponent } from './login/sign-up/sign-up.component';
-import { CreateAccountComponent } from './login/create-account/create-account.component';
-
-
 
 //import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
@@ -43,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
-import { ValidFormComponent } from './internal/valid-form/valid-form.component';
+import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
+import { AccountComponent } from './internal/account/account.component';
 
 
 
@@ -62,10 +58,8 @@ import { ValidFormComponent } from './internal/valid-form/valid-form.component';
     DraftsComponent,
     OptionFormComponent,
     NestedOptionComponent,
-    ValidFormComponent,
-    LoginPageComponent,
-    SignUpComponent,
-    CreateAccountComponent
+    ViewpollComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,12 +69,6 @@ import { ValidFormComponent } from './internal/valid-form/valid-form.component';
     AppRoutingModule,
     ReactiveFormsModule,
     MatDatepickerModule,MatInputModule,MatNativeDateModule,
-    //MatDatepickerModule,
-    //MatDatepickerToggle,
-    //MatFormFieldModule,
-    //MatInputModule,
-    //MatNativeDateModule,
-    //FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatCheckboxModule,

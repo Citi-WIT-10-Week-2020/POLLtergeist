@@ -97,22 +97,19 @@ h1{
     float: left;
 }
 .plus{
-    padding-left: 700px;
-    text-align: center;
-    display:block;
-    //margin-bottom:-500px;
+    //padding-left: 100px;
+    position: relative;
+    margin-bottom:-50px;
     //float: inline;
-
-    //margin-left:60px;
-    margin:90px -100px;
+    //margin:-20px -30px;
     //padding-bottom: 45px;
-    //padding-top: 25px;
+    padding-top: 25px;
 }
 .checkxmark{
     float: right;
-    position: absolute; 
+    position: relative; 
     //margin: -20px -30px;
-    //margin-right: -600px;
+    margin-right: -600px;
     //padding-left:10px;
     //margin-left: 20px;
     //top:-200px;

@@ -62,22 +62,32 @@ export class CreateSurveyComponent implements OnInit {
   }
 
   addMC(){
-    const newMC = this.fb.group({
+    /*const newMC = this.fb.group({
       questionTitle: "",
-      answer: []
+      answer: ['']
     })
     this.mcForms.push(newMC);
+    */
+   let control = <FormArray>this.surveyForm.controls.multipleChoice;
+   control.push(
+     this.fb.group({
+       questionTitle: [''],
+       answerChoices: this.fb.array([])
+     })
+   )
   }
   deleteMC(i) {
     this.mcForms.removeAt(i);
   }
 
-  addAnswer() {
-    const newOpt = this.fb.group ({
-      choice: ""
-    })
-
-    this.answerArray.push(newOpt);
+  addMCOption(control) {
+    control.push (
+      this.fb.group({
+        option:""
+      })
+      
+    )
+    
   }
 
   addCL(){
@@ -87,6 +97,7 @@ export class CreateSurveyComponent implements OnInit {
     })
     this.clForms.push(newCL);
   }
+  
   deleteCL(i) {
     this.clForms.removeAt(i);
   }

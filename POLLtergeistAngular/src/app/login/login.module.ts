@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AngularMaterialModule } from './angular-material.module';
+import { LoginHeaderComponent } from './login-header/login-header.component';
+import { MaterialModule } from '../internal/material.module';
+
 
 
 @NgModule({
   declarations: [
-
+    LoginHeaderComponent
   ],
   exports: [
-
+    LoginHeaderComponent
   ],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    MaterialModule
   ]
 })
 export class LoginModule { }

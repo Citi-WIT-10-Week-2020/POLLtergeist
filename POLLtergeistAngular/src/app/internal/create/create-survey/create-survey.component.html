@@ -27,7 +27,7 @@ Value : {{surveyForm.value | json }}
   <div class = "example-form">
       <div class = "rectangle">
         <mat-form-field class="surveyTitle">
-         <mat-label style="color:white;">Title of Survey</mat-label>
+         <mat-label style="color:white; font-size: 20px;">Title of Survey</mat-label>
             <textarea style = "font-size: 30px;" formControlName="title" matInput placeholder="Ex. Survey1"></textarea>
         </mat-form-field>
       </div>
@@ -55,7 +55,7 @@ Value : {{surveyForm.value | json }}
         <div class="example-container">
           <mat-form-field  class = "questionTitle" style= "width: 600px;" appearance="fill">
            <mat-label style = "color:white;">Title of Question 1</mat-label>
-            <input matInput formControlName="questionTitle">
+            <input matInput style= "color: white; font-size: 20px;" formControlName="questionTitle">
           </mat-form-field>
    
 <br>
@@ -86,21 +86,22 @@ Value : {{surveyForm.value | json }}
     <div class = "question">
         <div class="example-container">
           <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
-            <mat-label>Title of Question 2</mat-label>
-            <input matInput>
+            <mat-label  style = "color:white;">Title of Question 2</mat-label>
+            <input tyle = "color:white;"  style = "font-size : 20px;" matInput>
           </mat-form-field>
    
+<br>
 <br>
 
 <!-- answer choices  -->
           <div class = "MC">
-            <div formArrayName = "answer">
-              <div *ngFor = "let answer of answerArray.controls; let k = index" [formGroupName] = "k">
-            <mat-radio-button style= "padding-left:10px;" value="1">Option 1</mat-radio-button>
+             <!-- <div formArrayName = "mc.controls.answerChoicesArray"> -->
+         <!-- <div *ngFor = "; let k = index" [formGroupName] ="k">  -->
+            <mat-radio-button style= "padding-left:10px;" value="1"> <input matInput placeholder="choice 1" formControlName="answerChoices"></mat-radio-button> 
             <br>
-            </div>
-            </div>
-            <button mat-icon-button (click) = "addAnswer()"> 
+             <!-- </div>  -->
+              <!-- </div>  -->
+            <button mat-icon-button (click) = "addMCOption(mc.controls.answerChoices)"> 
             <mat-icon>add_box icon</mat-icon>
             </button>
           </div>
@@ -121,8 +122,8 @@ Value : {{surveyForm.value | json }}
     <div class = "question">
       <div class="example-container">
          <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
-            <mat-label>Title of Question 3</mat-label>
-            <input matInput>
+            <mat-label style= "color: white;">Title of Question 3</mat-label>
+            <input style= "color: white; font-size: 20px;"matInput>
            </mat-form-field>
    
 <br>

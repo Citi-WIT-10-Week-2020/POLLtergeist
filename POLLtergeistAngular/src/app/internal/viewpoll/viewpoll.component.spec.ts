@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ValidFormComponent } from './valid-form.component';
+import { ViewpollComponent } from './viewpoll.component';
 
-describe('ValidFormComponent', () => {
-  let component: ValidFormComponent;
-  let fixture: ComponentFixture<ValidFormComponent>;
+describe('ViewpollComponent', () => {
+  let component: ViewpollComponent;
+  let fixture: ComponentFixture<ViewpollComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ValidFormComponent ]
+      declarations: [ ViewpollComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ValidFormComponent);
+    fixture = TestBed.createComponent(ViewpollComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
