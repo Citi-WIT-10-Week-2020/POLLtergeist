@@ -36,14 +36,18 @@
   </div>
   </div>
   <!------- add and delete question><----->
-  <button style="margin-top:5px; margin-bottom:5px;" type="button" class="btn btn-primary btn-sm" (click)="addNewQuestion()">
+
+  <button style="background: url(plus_sign.png)" class = "addQuestion" type="button" (click)="addNewQuestion()">
+    <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
   </button>
+
 
   <div formArrayName="questions">
     <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
       <fieldset>
-        <legend><h4>Question {{i+1}}:<button style="margin-left:35px;" type="button" class="btn btn-danger" (click)="deleteQuestion(i)">
+        <legend><h4>Question {{i+1}}:<button style="background: url(x_mark.png)" type="button" (click)="deleteQuestion(i)">
+          <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
 <span class="glyphicon glyphicon-minus"aria-hidden="true"></span> Remove Question
 </button>
 
@@ -60,7 +64,8 @@
                      formControlName="question" 
                      style="margin-right:5px;" 
                      required>
-              <button style="margin-right:5px;"  type="button" class="btn btn-success btn-sm" (click)="addNewOption(question.controls.options)">
+              <button style="background: url(plus_sign.png)" type="button" class = "addNewOption" (click)="addNewOption(question.controls.options)">
+                <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Options
               </button>
             </div>
@@ -80,7 +85,8 @@
                            id="option"
                            name="option"
                             />
-                 <button style="margin-right:5px;" type="button" class="btn btn-danger btn-sm" (click)="deleteOption(question.controls.options, j)">
+                 <button style="background: url(x_mark.png)" type="button" (click)="deleteOption(question.controls.options, j)">
+                  <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
 <span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Option</span>
 </button>
                     </div>
