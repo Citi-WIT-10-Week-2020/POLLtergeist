@@ -1,3 +1,5 @@
+Create new html
+
 Value : {{surveyForm.value | json }}
 <div *ngIf="!sucess">
 <form [formGroup] = "surveyForm">
@@ -95,18 +97,25 @@ Value : {{surveyForm.value | json }}
 
 <!-- answer choices  -->
           <div class = "MC">
-             <!-- <div formArrayName = "mc.controls.answerChoicesArray"> -->
-         <!-- <div *ngFor = "; let k = index" [formGroupName] ="k">  -->
-            <mat-radio-button style= "padding-left:10px;" value="1"> <input matInput placeholder="choice 1" formControlName="answerChoices"></mat-radio-button> 
+            <div formArrayName = "answerChoices"> 
+            <div *ngFor = "let opt of mc.get('answerChoices').controls; let k = index" [formGroupName] ="k"> 
+              <mat-radio-button style= "padding-left:10px;" value="1"> <input matInput placeholder="answer choice" formControlName="answerChoice"></mat-radio-button> 
+              <button (click) = "deleteChoice(mc.get('answerChoices').controls, k)" mat-icon-button > 
+                <mat-icon>delete_forever icon</mat-icon>
+                </button>
             <br>
-             <!-- </div>  -->
-              <!-- </div>  -->
+             </div> 
+             </div>  
             <button mat-icon-button (click) = "addMCOption(mc.controls.answerChoices)"> 
             <mat-icon>add_box icon</mat-icon>
             </button>
           </div>
         </div>
-        <button mat-raised-button color = "warn" (click) = "deleteMC(i)">Delete</button>
+
+        <button mat-fab color="primary" style = "left: 48%;" (click) = "deleteMC(i)" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+        
     </div>
 <!-- below divs close array and form group -->
   </div>
