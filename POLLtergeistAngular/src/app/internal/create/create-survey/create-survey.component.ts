@@ -47,7 +47,7 @@ export class CreateSurveyComponent implements OnInit {
   }
 
   get answerArray() {
-    return this.mcForms.get("answer") as FormArray
+    return this.mcForms.get("answerChoices") as FormArray
   }
 
   addFRQ(){
@@ -62,12 +62,6 @@ export class CreateSurveyComponent implements OnInit {
   }
 
   addMC(){
-    /*const newMC = this.fb.group({
-      questionTitle: "",
-      answer: ['']
-    })
-    this.mcForms.push(newMC);
-    */
    let control = <FormArray>this.surveyForm.controls.multipleChoice;
    control.push(
      this.fb.group({
@@ -80,15 +74,27 @@ export class CreateSurveyComponent implements OnInit {
     this.mcForms.removeAt(i);
   }
 
+  getChoices(control){
+    return control.get('answerChoices') as FormArray;
+   // return this.surveyForm.get('checkList') as FormArray
+
+  }
+
   addMCOption(control) {
     control.push (
       this.fb.group({
-        option:""
+        answerChoice:''
       })
       
     )
     
   }
+
+  deleteChoice(control, k) {
+    this.answerArray.removeAt(k);
+
+  }
+
 
   addCL(){
     const newCL = this.fb.group({
