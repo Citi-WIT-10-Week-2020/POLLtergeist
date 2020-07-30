@@ -96,44 +96,7 @@ h1{
     padding-left: 40px;
     float: left;
 }
-.plus{
-    //padding-left: 100px;
-    position: relative;
-    margin-bottom:-50px;
-    //float: inline;
-    //margin:-20px -30px;
-    //padding-bottom: 45px;
-    padding-top: 25px;
-}
-.checkxmark{
-    float: right;
-    position: relative; 
-    //margin: -20px -30px;
-    margin-right: -600px;
-    //padding-left:10px;
-    //margin-left: 20px;
-    //top:-200px;
-}
-.rectangle2{
-    background-color:#C4C4C4;
-    width: 90%;
-    padding-top:200px;
-    padding-left: 10px;
-    border-radius: 5px;
-    height: 45%;
-    margin:auto;
-    margin-top: 10px;
-    //margin-bottom: auto;
-    //margin: 50px;
-    
-}
-.center{
-  display: block;
-  //margin: 100px;
-  margin-left: 50%;
-  margin-right: auto;
-  //width: 10%;
-}
+
 .deadline{
 float:right;
 position: relative;
@@ -192,11 +155,23 @@ top:-100px;
     text-align: center;
     //padding: 15px 23px;
     display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
     //font-size: 25px;
     //margin-bottom: 50px;
 }
 .addNewOption{
     border:none;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.deleteQuestion{
+    border:none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.deleteOption{
+    border:none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
