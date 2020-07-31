@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .formTitle {
     border-radius: 12px;
     background-color: #023E7D;
@@ -10,4 +10,22 @@
     text-align: center;
     font-size: 40px;
     margin-top: 40px; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.space {
+
+}
+
+.questionBackground {
+
+    border-radius: 9px;
+    background-color: lightgray; 
+    width: 500px;
+    height: auto; 
+    padding: 50px; 
+    text-align: left; 
+    font-size: 20px; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: black; 
 }

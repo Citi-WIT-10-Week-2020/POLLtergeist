@@ -1,9 +1,9 @@
 
 export const DATA = {
-    title: "Survey Title",
+    title: "Work Environment",
     question1: {
-      questionTitle: "What do you...?",
-      answerChoices: ["A)", "B)", "C)"]
+      questionTitle: "Which work setting do you prefer?",
+      answerChoices: [" Work from home", " Working in the office", " Hybrid"]
     },
     question2: {
       questionTitle: "How do you...?",

@@ -1,5 +1,20 @@
+<!-- @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); -->
+
+<!-- title -->
 <h1 class = "formTitle">{{ title }}</h1>
-<h3>{{ question1.questionTitle }}</h3>
+
+<!-- space -->
+<br>
+<br>
+<br>
+<!-- poll options -->
+<div style = "margin: auto;" class = "questionBackground">
+<div style = "font-size: 20px;">{{ question1.questionTitle }}</div>
+<br>
 <div *ngFor="let choice of answerChoices">
-  <p>{{ choice }}</p>
+  <mat-radio-button color="primary" style= "padding-left:10px;" 
+  value="1"><div style = "font-family:'Josefin Sans', sans-serif ">{{ choice }}</div></mat-radio-button>
+  <br>
+  <br>
+</div>
 </div>
