@@ -22,10 +22,10 @@ export class EdupageComponent implements OnInit {
   imagePresent: boolean = true;
   title: string = "education package";
   imageLocation: any = "assets/img/EduPageBook.png";
-  body: string = "With the education package colleges, universities, and other educational" + 
-  "organizations can post important announcements about updates and changes within the school." +
- "Administration can host surveys and polls to connect with students and get honest feedback." +
-  "Increase student involvement today with POLLtergeist!"
+  body: string = `With the education package colleges, universities, and other educational 
+  organizations can post important announcements about updates and changes within the school. 
+ Administration can host surveys and polls to connect with students and get honest feedback. 
+  Increase student involvement today with POLLtergeist!`
 
   ngOnInit(): void {
   }
