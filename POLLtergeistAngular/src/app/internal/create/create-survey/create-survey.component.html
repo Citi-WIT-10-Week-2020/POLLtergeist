@@ -69,7 +69,7 @@
            </mat-form-field>
         </div>
 
-        <button mat-fab color = "white" style = "left: 48%;" (click) = "deleteFRQ(i)" aria-label="Example icon button with a delete icon">
+        <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteFRQ(i)" aria-label="Example icon button with a delete icon">
           <mat-icon>delete</mat-icon>
         </button>
     </div>
@@ -99,7 +99,7 @@
             <div formArrayName = "answerChoices"> 
             <div *ngFor = "let opt of mc.get('answerChoices').controls; let k = index" [formGroupName] ="k"> 
               <mat-radio-button  color="primary" style= "padding-left:10px;" value="1"> <input matInput placeholder="answer choice" formControlName="answerChoice"></mat-radio-button> 
-              <button (click) = "deleteChoice(mc.controls.answerChoices, k)" mat-icon-button > 
+              <button onclick="return confirm('Are you sure?');" (click) = "deleteChoice(mc.controls.answerChoices, k)" mat-icon-button > 
                 <mat-icon>delete_forever icon</mat-icon>
                 </button>
             <br>
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <button mat-fab color = "white" style = "left: 48%;" (click) = "deleteMC(i)" aria-label="Example icon button with a delete icon">
+        <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteMC(i)" aria-label="Example icon button with a delete icon">
           <mat-icon>delete</mat-icon>
         </button>
         
@@ -142,7 +142,7 @@
             <div formArrayName = "answerChoices"> 
               <div *ngFor = "let opt of cl.get('answerChoices').controls; let k = index" [formGroupName] ="k"> 
             <mat-checkbox  color="primary" style= "padding-left:10px;"> <input matInput placeholder=" check me" formControlName="answerChoice"> </mat-checkbox>
-            <button (click) = "deleteChoice(cl.controls.answerChoices, k)" mat-icon-button > 
+            <button (click) = "deleteChoice(cl.controls.answerChoices, k)" onclick="return confirm('Are you sure?');" mat-icon-button > 
               <mat-icon>delete_forever icon</mat-icon>
               </button>
             <br>
@@ -153,7 +153,7 @@
              </button> 
           </div>
       </div>
-      <button mat-fab color = "white" style = "left: 48%;" (click) = "deleteCL(i)" aria-label="Example icon button with a delete icon">
+      <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteCL(i)" aria-label="Example icon button with a delete icon">
         <mat-icon>delete</mat-icon>
       </button>
     </div>
