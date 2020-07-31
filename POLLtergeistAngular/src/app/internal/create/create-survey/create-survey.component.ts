@@ -80,6 +80,20 @@ export class CreateSurveyComponent implements OnInit {
 
   }
 
+  addCLOption(control) {
+    control.push (
+      this.fb.group({
+        answerChoice:''
+      })
+      
+    )
+    
+  }
+
+  deleteCLChoice(control, k) {
+    control.removeAt(k);
+  }
+
   addMCOption(control) {
     control.push (
       this.fb.group({
@@ -91,17 +105,19 @@ export class CreateSurveyComponent implements OnInit {
   }
 
   deleteChoice(control, k) {
-    this.answerArray.removeAt(k);
-
+    control.removeAt(k);
   }
 
 
+
   addCL(){
-    const newCL = this.fb.group({
-      questionTitle:"",
-      answer: this.fb.array([])
-    })
-    this.clForms.push(newCL);
+    let control = <FormArray>this.surveyForm.controls.checkList;
+   control.push(
+     this.fb.group({
+       questionTitle: [''],
+       answerChoices: this.fb.array([])
+     })
+   )
   }
   
   deleteCL(i) {
