@@ -4,11 +4,12 @@
     </head>
 
     <body>
-        <div class = "heading">{{title}}<img class = "image-edu" [src] = "imageLocation"
+        <div class = "heading">{{title}}
+            <div *ngIf = "imagePresent"> 
+            <img class = "image-edu" [src] = "imageLocation"
             alt="Book">
-        <!-- <div *ngIf = "imagePresent"> -->
          </div>
-        <!-- </div>  -->
+        </div>  
 
         <p>
        {{body}}

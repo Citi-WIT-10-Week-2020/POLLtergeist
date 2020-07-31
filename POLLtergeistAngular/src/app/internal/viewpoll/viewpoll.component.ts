@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-viewpoll',
@@ -12,7 +13,7 @@ export class ViewpollComponent implements OnInit {
   question1: any = {questionTitle: "Fake?", answerChoices: ["a", "b"]};
   answerChoices: any = ["a", "b"];
   
-  constructor(public data: DataService) { 
+  constructor(public data: DataService, public router: Router) { 
   }
 
   ngOnInit(): void {
@@ -22,6 +23,11 @@ export class ViewpollComponent implements OnInit {
     this.answerChoices = this.question1.answerChoices;
   
    
+  }
+
+
+  toPolls() {
+    this.router.navigate(['polls']);
   }
 
 }

@@ -12,16 +12,20 @@ export class PollsComponent implements OnInit {
   
   titlePage: string = "Polls";
   type: string = "Poll"; 
+  pollTitle: string = "placeholder"; 
+  samples: any = [{sampleName: "Work Environment"}, {sampleName: "poll2"}, {sampleName: "poll3"}];
 
   //sample data 
-  samples= [{sampleName: "poll1"}, {sampleName: "poll2"}, {sampleName: "poll3"}, {sampleName: "poll4"}, {sampleName: "poll5"},
+  //samples= [{sampleName: ""}, {sampleName: "poll2"}, {sampleName: "poll3"}
+  //, {sampleName: "poll4"}, {sampleName: "poll5"},
   //{sampleName: "poll6"}, {sampleName: "poll7"}, {sampleName: "poll8"}, {sampleName: "poll9"}, {sampleName: "poll10"},
   //{sampleName: "poll11"}, {sampleName: "poll12"}
-  ];
+  //];
 
   constructor(private router: Router, public internalNav: InternalheaderService, public nav: HeaderService) { }
 
   ngOnInit(): void {
+  
     this.nav.hide(); //hides homepage navbar
     this.internalNav.show(); //shows internal elements navbar 
   }
