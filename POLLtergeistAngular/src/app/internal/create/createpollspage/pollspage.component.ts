@@ -10,6 +10,7 @@ import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
 
 })
 export class PollspageComponent {
+  
   data = {
     questions: [
       {

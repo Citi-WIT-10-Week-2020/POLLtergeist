@@ -79,6 +79,20 @@ h1{
     text-align: center; 
     margin: 40px 80px;
 }
+/*
+.questionTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center; 
+    color: white;
+    font-size: 20px;
+    height: 32px;
+    width: 30%;
+    background-color: #023E7D;
+    border-radius:15px;
+    margin-top: -150px;
+    margin-left: 40px;
+}
+*/
 
 .rectangle{
     height: 50px;
@@ -127,7 +141,7 @@ top:-100px;
 
 .question{
     background-color:#023E7D;
-    color: white;
+    color:white;
     font-size: 15px;
     text-align: center;
     height: 60px;
@@ -135,14 +149,15 @@ top:-100px;
     //max-width: 500px;
     //overflow: hidden;
     display: inline-block;
-    padding: 10px; 
+    //padding: 10px; 
     border-radius: 12px;
     position: relative;
     //left:80;
     top:-200px;
-    margin: 15px;
+    //margin: 15px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .option{
     display: inline-block;
     margin:10px;
@@ -152,26 +167,56 @@ top:-100px;
 }
 .addQuestion{
     border:none;
-    text-align: center;
     //padding: 15px 23px;
-    display: inline-block;
+    //display: inline-block;
+    position:relative;
+    //bottom:-90px;
     font-family: 'Josefin Sans', sans-serif;
+    text-align:right;
+    //margin-left: 40px;
+    //bottom:-4px;
     //font-size: 25px;
     //margin-bottom: 50px;
 }
 .addNewOption{
     border:none;
     text-align: center;
+    margin-right: 5px;
+    //margin-left: 55px;
     font-family: 'Josefin Sans', sans-serif;
 }
 .deleteQuestion{
     border:none;
-    text-align: center;
+    //bottom:-150px;
+    position:relative;
+    text-align: right;
     font-family: 'Josefin Sans', sans-serif;
+    //margin-left:40px;
 }
 .deleteOption{
     border:none;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    margin-right:20px;
 }
+/*
+.rectangle3{
+    position: relative;  Declared position allows for location changes 
+    top: -10px;
+    padding-top: 1em;
+    background-color: #C4C4C4;
 
+    margin-left: 40px;
+}
+*/
+/*
+.combine{
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+*/
+.submitCan{
+    text-align: right;
+    margin-top:10px;
+    margin-right:30px;
+}
