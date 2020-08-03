@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { InternalheaderService } from 'src/app/services/internalheader.service';
+import { HeaderService } from 'src/app/services/header.service';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -25,13 +29,18 @@ export class PollspageComponent {
 
   myForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router, public internalNav: InternalheaderService, public nav: HeaderService, public dialog: MatDialog) { 
     this.myForm = this.fb.group({
       title: [''],
       questions: this.fb.array([])
     })
 
     this.setQuestions();
+  }
+  
+  ngOnInit(): void{
+  this.nav.hide(); //hides homepage navbar
+  this.internalNav.show(); //shows internal elements navbar 
   }
 
   onSubmit() {
