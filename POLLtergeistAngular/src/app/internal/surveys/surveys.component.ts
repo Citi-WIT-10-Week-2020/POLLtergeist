@@ -10,11 +10,12 @@ import { Router } from '@angular/router';
 })
 export class SurveysComponent implements OnInit {
 
+  i: number = 0; 
   titlePage: string = "Surveys";
   type: string = "survey"; 
 
-  samples = [{sampleName: "survey1", sampleId: "s1"}, {sampleName: "survey2", sampleId: "s2"}, 
-  {sampleName: "survey3", sampleId: "s3"}
+  samples = [{sampleName: "survey1", ID: "s1"}, {sampleName: "survey2", ID: "s2"}, 
+  {sampleName: "survey3", ID: "s3"}
  // , {sampleName: "survey8"}, {sampleName: "survey9"}, {sampleName: "survey10"},
  // {sampleName: "survey11"}, {sampleName: "survey12"}
   ];

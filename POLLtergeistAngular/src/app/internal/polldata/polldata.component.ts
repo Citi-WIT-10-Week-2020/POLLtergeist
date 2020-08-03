@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolldataComponent implements OnInit {
 
+  title: string = "Work Environment";
   constructor() { }
 
   ngOnInit(): void {

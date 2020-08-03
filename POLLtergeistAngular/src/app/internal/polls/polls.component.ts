@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderService } from 'src/app/services/header.service';
 import { InternalheaderService } from 'src/app/services/internalheader.service';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-polls',
@@ -9,11 +10,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./polls.component.scss','../sharedinternal/sharedinternal.component.scss']
 })
 export class PollsComponent implements OnInit {
-  
+  i: number = 1;
   titlePage: string = "Polls";
   type: string = "Poll"; 
   pollTitle: string = "placeholder"; 
-  samples: any = [{sampleName: "Work Environment"}, {sampleName: "poll2"}, {sampleName: "poll3"}];
+  samples: any = [{sampleName: "Work Environment", ID: 1}, {sampleName: "TV shows", ID:2}, {sampleName: "Fall Semester", ID:3}];
 
   //sample data 
   //samples= [{sampleName: ""}, {sampleName: "poll2"}, {sampleName: "poll3"}
@@ -22,14 +23,14 @@ export class PollsComponent implements OnInit {
   //{sampleName: "poll11"}, {sampleName: "poll12"}
   //];
 
-  constructor(private router: Router, public internalNav: InternalheaderService, public nav: HeaderService) { }
+  constructor(private router: Router, public internalNav: InternalheaderService, public nav: HeaderService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
   
     this.nav.hide(); //hides homepage navbar
     this.internalNav.show(); //shows internal elements navbar 
   }
- 
+
   onNew(){
     this.router.navigate(['pollspage']);
   }

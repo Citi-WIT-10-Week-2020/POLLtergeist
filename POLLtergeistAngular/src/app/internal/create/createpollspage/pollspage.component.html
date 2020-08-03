@@ -37,11 +37,12 @@
   </div>
   <!------- add and delete question><----->
 
+  <!--  
   <button style="background: url(plus_sign.png)" class = "addQuestion" type="button" (click)="addNewQuestion()">
     <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
   </button>
-
+-->
 
   <div formArrayName="questions">
     <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
@@ -102,7 +103,14 @@
 
     <button type="submit" class="btn btn-success">Submit</button>
   <button type="button" class="btn btn-basic">Cancel</button>
+
+  <button style="background: url(plus_sign.png)" class = "addQuestion" type="button" (click)="addNewQuestion()">
+    <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
+  </button>
+  
 </form>
+
 
  <pre>{{myForm.value | json}}</pre>
 

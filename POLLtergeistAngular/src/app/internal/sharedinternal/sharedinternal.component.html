@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 <h1 class = "heading">
 <div class="rectangle">{{titlePage}}</div>
 </h1>
@@ -16,7 +19,7 @@
     <div class = "row"> 
         <!-- for loop iterates through array of polls -->
         <div *ngFor="let sample of samples">
-            <div class = "pollsquare" (click) = "onSample($event)">
+            <div class = "pollsquare" (click) = "onSample($event)" id = {{sample.ID}}>
                     {{sample.sampleName}} 
              </div>
     </div>
