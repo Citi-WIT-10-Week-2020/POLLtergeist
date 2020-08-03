@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.rectangle {
+    height: 160px;
+    width: 100%;
+    background-color: #001233;
+    //connects to header no space in between 
+    margin-top: 0px; 
+    padding: 20px; 
+    //centers text in the middle of heading 
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+
+  }
+
+.rectangle2 {
+    height: 85px;
+    width: 25%;
+    margin: auto;
+    background-color: #E2E2E2;
+    border-radius: 20px; 
+    padding: 10px;
+    //centers text in middle of rectangle 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    //font size 
+    font-size: 25px;
+    font-family: "Josepfin Sans", "san serif";
+
+}
+
+.heading {
+    color: white; 
+    font-size: 100px;
+    text-align: center;
+    display: inline block;
+    font-family: 'Jolly Lodger', cursive;
+   
+}
+
+.title{
+    text-align: center;
+    margin: auto;
+    font-size: 35px; 
+    font-family: "Josepfin Sans", "san serif";
+}
+/*
+.table{
+    display:table; 
+}
+
+.row{
+   margin: auto;
+    //overflow-wrap: break-word; 
+}
+
+.square{
+    width: 250px;
+    height: 250px; 
+    background-color: #93C7FF;
+    //rounds corners
+    border-radius: 12px;
+    //space between elements 
+    margin-left:60px;
+    //space between rows 
+    margin-top:70px;
+    padding: 30px; 
+    //centers text in box
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    
+}
+*/
