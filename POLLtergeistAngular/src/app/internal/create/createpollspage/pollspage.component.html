@@ -35,6 +35,7 @@
            required>
   </div>
   </div>
+  <!------- add and delete question><----->
 
   <button style="background: url(plus_sign.png)" class = "addQuestion" type="button" (click)="addNewQuestion()">
     <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
@@ -45,66 +46,49 @@
   <div formArrayName="questions">
     <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
       <fieldset>
-            <div class = "questionTitle">Question {{i+1}}</div>
-        <button style="background: url(trash.png)" type="button" class ="deleteQuestion" (click)="deleteQuestion(i)">
-          <input type="image" src="assets/img/trash.png" width="30" height="30"/>
+        <legend><h4>Question {{i+1}}:<button style="background: url(x_mark.png)" type="button" class ="deleteQuestion" (click)="deleteQuestion(i)">
+          <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
 <span class="glyphicon glyphicon-minus"aria-hidden="true"></span> Remove Question
 </button>
 
-
-
-<!------Add new options-><--->
-
-
+</h4></legend>
         <div [formGroupName]="i">
           <div class="form-inline">
-            <div class = "combine">
-            <div class = "rectangle3">
             <div class="form-group">
-              <label style="margin-right:10px;margin-left:60px;top: 0em;" class="col-form-label" for="question">Question</label>
+              <label style="margin-right:20px;" class="col-form-label" for="question">Question</label>
               <input type="text"
                      class="form-control"
                      id="question"
                      placeholder="Question"
                      name="type"
                      formControlName="question" 
-                     style="margin-right:5px;margin-left:5px;" 
+                     style="margin-right:5px;" 
                      required>
-                     
               <button style="background: url(plus_sign.png)" type="button" class = "addNewOption" (click)="addNewOption(question.controls.options)">
                 <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Answer Choice
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Options
               </button>
-                </div>
             </div>
           </div>
-        </div>
-          <!------Delete options><---->
           <div class="form-inline">
             <div class="form-group">
-              <div class = "combine">
-              <div class= "rectangle3">
               <div formArrayName="options">
                 <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let option of question.get('options').controls; let j=index">
                   <div [formGroupName]="j">
                     <div class="form-group">
-                    <label style="margin-right:15px; margin-left:5px;"  class="col-form-label" for="emailId">Answer Choice {{j + 1}}</label>
+                    <label style="margin-right:25px;"  class="col-form-label" for="emailId">Option {{j + 1}}</label>
                     <input formControlName="option"
                            class="form-control"
                            style="margin-right:5px;" 
                            type="email"
-                           placeholder="Answer Choice"
+                           placeholder="Option"
                            id="option"
                            name="option"
                             />
-                 <button class = "deleteOption" style="background: url(trash.png)" type="button" (click)="deleteOption(question.controls.options, j)">
-                  <input type="image" src="assets/img/trash.png" width="30" height="30"/>
-<span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Answer Choice</span>
+                 <button class = "deleteOption" style="background: url(x_mark.png)" type="button" (click)="deleteOption(question.controls.options, j)">
+                  <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
+<span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Option</span>
 </button>
-
-</div>
-</div>
-                      
                     </div>
                   </div>
                 </div>
@@ -115,10 +99,9 @@
       </fieldset>
     </div>
   </div>
-  <div class = "submitCan">
+
     <button type="submit" class="btn btn-success">Submit</button>
   <button type="button" class="btn btn-basic">Cancel</button>
-  </div>
 </form>
 
  <pre>{{myForm.value | json}}</pre>
