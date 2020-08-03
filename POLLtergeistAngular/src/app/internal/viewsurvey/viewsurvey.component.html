@@ -3,10 +3,10 @@
 <!-- @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); -->
 
 <!-- title -->
-<h1 class = "formTitle">{{ title }}</h1>
+<h1 class = "formTitle">Survey1</h1>
 
 <!-- view data button -->
-<div class = "viewData" (click) = "viewData()">View Data</div>
+<div class = "viewData" >View Data</div>
 
 <br>
 <br>
@@ -14,8 +14,9 @@
 
 <!-- poll options -->
 <div style = "margin: auto;" class = "questionBackground">
-<div style = "font-size: 20px;">{{ question1.questionTitle }}</div>
+<div style = "font-size: 20px;">If you have to work from home for the next 3 months, please list everything you would need.</div>
 <br>
+<!---
 <div *ngFor="let choice of answerChoices">
   <mat-radio-button color="primary" style= "padding-left:10px;" 
   value="1"><div style = "font-family:'Josefin Sans', sans-serif ">{{ choice }}</div></mat-radio-button>
@@ -26,5 +27,5 @@
 <div class = "center">
 <button id='submit'>
   <span (click) = "toPolls()">Submit</span>
-</button>
+</button>-->
 </div>
