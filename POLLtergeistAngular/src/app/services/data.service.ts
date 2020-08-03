@@ -7,13 +7,23 @@ import {DATA} from './data';
 export class DataService {
  
   constructor() { }
-
+/*
   getSurveyTitle() {
-    return DATA.title;
+    return DATA.question1;
   }
+
+  */
 
   getQuestion1() {
     return DATA.question1;
+  }
+
+  getQuestion2() {
+    return DATA.question2;
+  }
+
+  getQuestion3() {
+    return DATA.question3;
   }
 
 }

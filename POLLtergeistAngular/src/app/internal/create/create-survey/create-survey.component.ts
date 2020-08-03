@@ -15,7 +15,7 @@ import { InternalheaderService } from 'src/app/services/internalheader.service';
 
 export class CreateSurveyComponent implements OnInit {
   
-  sucess:boolean = false;
+  success:boolean = false;
   surveyForm:FormGroup;
   constructor(public internalNav: InternalheaderService, private fb: FormBuilder, private router: Router) { }
 
@@ -128,6 +128,13 @@ export class CreateSurveyComponent implements OnInit {
     this.router.navigate(['drafts']);
   }
   submission() {
-    this.sucess = true; 
+    this.success = true; 
   }
+/*
+  toPolls() {
+    alert("hi");
+    //this.router.navigate(['polls']);
+  }
+*/
+
 }

@@ -1,5 +1,5 @@
 <!-- Value : {{surveyForm.value | json }} -->
-<div *ngIf="!sucess">
+<div *ngIf="!success">
 <form [formGroup] = "surveyForm">
 <hr>
 
@@ -186,4 +186,14 @@
 </form>
 </div>
 
-<div class = "submitted" *ngIf = "sucess"> You have successfully created a survey!</div>
+<div class = "submitted" *ngIf = "success"> 
+  You have successfully created a survey!
+  <br>
+  <br>
+  <br>
+  <!--  
+  <button *ngIf = "success" id='submit'>
+    <span (click)= "toPolls()" >Return</span>
+  </button>
+  -->
+</div>

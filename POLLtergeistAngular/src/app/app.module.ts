@@ -43,6 +43,7 @@ import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
 import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
 import { AccountComponent } from './internal/account/account.component';
+import { PolldataComponent } from './internal/polldata/polldata.component';
 
 
 
@@ -65,7 +66,8 @@ import { AccountComponent } from './internal/account/account.component';
     AccountComponent,
     LoginPageComponent,
     SignUpComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    PolldataComponent
   ],
   imports: [
     BrowserModule,

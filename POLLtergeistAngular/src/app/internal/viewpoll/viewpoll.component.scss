@@ -13,8 +13,20 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.space {
+.viewData {
 
+    width: 250px; 
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 20px;
+    height: auto; 
+    color: white;
+    background-color: #4391E3;
+    border-color: #4391E3;
+    border-radius: 12px; 
+    margin-left: 42%; 
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .questionBackground {
@@ -29,3 +41,22 @@
     font-family: 'Josefin Sans', sans-serif;
     color: black; 
 }
+
+.center {
+    text-align: center;
+    margin-top: 37px; 
+
+}
+
+//submit button
+#submit {
+    border-radius: 10px; 
+    border-color: #001233 ;
+    background-color: #001233 ;
+    width: 140px;
+    height: 50px; 
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+

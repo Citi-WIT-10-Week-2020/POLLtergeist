@@ -13,6 +13,7 @@ import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
+import { PolldataComponent } from './internal/polldata/polldata.component';
 
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
@@ -28,7 +29,8 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: "drafts", component: DraftsComponent},
 {path: 'login', component: LoginPageComponent},
 {path: 'signup', component: SignUpComponent},
-{path: 'createaccount', component: CreateAccountComponent}
+{path: 'createaccount', component: CreateAccountComponent},
+{path: 'viewpolldata', component: PolldataComponent}
 
 ];
 
