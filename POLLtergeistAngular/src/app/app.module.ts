@@ -26,6 +26,7 @@ import { DraftsComponent } from './internal/drafts/drafts.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
+import { AccountComponent } from './internal/account/account.component';
 
 //import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
@@ -42,8 +43,8 @@ import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@ang
 import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
 import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
-import { AccountComponent } from './internal/account/account.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
+import { AccountInfoComponent } from './internal/account-info/account-info.component';
 
 
 
@@ -67,7 +68,9 @@ import { PolldataComponent } from './internal/polldata/polldata.component';
     LoginPageComponent,
     SignUpComponent,
     CreateAccountComponent,
-    PolldataComponent
+    PolldataComponent,
+    AccountComponent,
+    AccountInfoComponent
   ],
   imports: [
     BrowserModule,
