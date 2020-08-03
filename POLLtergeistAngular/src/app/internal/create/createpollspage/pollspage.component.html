@@ -48,7 +48,7 @@
       <fieldset>
         <div class = "together">
           <div class = "questionTitle">
-        <legend><h4>Question {{i+1}}:<button style="background: url(trash.png); color:white" type="button" class ="deleteQuestion" (click)="deleteQuestion(i)">
+        <legend><h4>Question {{i+1}}:<button style="background: url(trash.png); color:white" type="button" class ="deleteQuestion" onclick="return confirm('Are you sure you want to delete?');" (click)="deleteQuestion(i)">
           <input type="image" src="assets/img/trash.png" width="30" height="30"/>
 <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Question
 </button>
