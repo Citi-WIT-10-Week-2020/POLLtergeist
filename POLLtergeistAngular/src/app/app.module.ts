@@ -47,6 +47,8 @@ import { PolldataComponent } from './internal/polldata/polldata.component';
 import { AccountInfoComponent } from './internal/account-info/account-info.component';
 import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
 import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
+import { Polldata2Component } from './internal/polldata2/polldata2.component';
+import { Polldata3Component } from './internal/polldata3/polldata3.component';
 
 
 
@@ -74,7 +76,9 @@ import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
     AccountComponent,
     AccountInfoComponent,
     Viewpoll2Component,
-    Viewpoll3Component
+    Viewpoll3Component,
+    Polldata2Component,
+    Polldata3Component
   ],
   imports: [
     BrowserModule,
