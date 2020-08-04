@@ -43,9 +43,20 @@ export class PollsComponent implements OnInit {
   onSample(event) {
     var target = event.target || event.srcElement || event.currentTarget; 
     target.style.backgroundColor= '#023E7D';
-    target.style.color = '#FFFFFF'
+    target.style.color = '#FFFFFF';
+    var value = event.target.getAttribute('id');; 
+    
+    if (value == 1){
     this.router.navigate(['/viewpoll']);
+    }
+    if (value == 2){
+      this.router.navigate(['/viewpoll2']);
+    }
+    if (value == 3){
+      this.router.navigate(['/viewpoll3']);
+    }
     //will pass in link to poll and redirect to the poll
+    
   }
 
 }
