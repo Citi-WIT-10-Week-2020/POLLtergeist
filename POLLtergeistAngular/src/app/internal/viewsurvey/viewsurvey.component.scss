@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.formTitle {
+    border-radius: 12px;
+    background-color: #023E7D;
+    height:auto;
+    width: 85%;
+    margin:auto; 
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.viewData {
+
+    width: 250px; 
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 20px;
+    height: auto; 
+    color: white;
+    background-color: #4391E3;
+    border-color: #4391E3;
+    border-radius: 12px; 
+    margin-left: 42%; 
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.questionBackground {
+
+    border-radius: 9px;
+    background-color: lightgray; 
+    width: 500px;
+    height: auto; 
+    padding: 50px; 
+    text-align: left; 
+    font-size: 20px; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: black; 
+}
+
+.center {
+    text-align: center;
+    margin-top: 37px; 
+
+}
+
+//submit button
+#submit {
+    border-radius: 10px; 
+    border-color: #001233 ;
+    background-color: #001233 ;
+    width: 140px;
+    height: 50px; 
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }

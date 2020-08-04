@@ -29,7 +29,7 @@ export class ViewpollComponent implements OnInit {
   }
 
 viewData() {
-  this.router.navigate(['viewpolldata']);
+  this.router.navigate(['viewsurveydata']);
 }
   toPolls() {
     this.router.navigate(['polls']);
