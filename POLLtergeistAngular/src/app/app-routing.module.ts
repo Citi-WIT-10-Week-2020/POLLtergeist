@@ -18,6 +18,8 @@ import { AccountComponent } from './internal/account/account.component';
 import { AccountInfoComponent } from './internal/account-info/account-info.component';
 import { PrivacyComponent } from './internal/privacy/privacy.component';
 import { HelpComponent } from './internal/help/help.component';
+import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
+import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
 {path:'education', component: EdupageComponent},
@@ -27,6 +29,8 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'pollspage', component:PollspageComponent},
 {path: "polls", component: PollsComponent},
 {path: "viewpoll", component: ViewpollComponent},
+{path: "viewpoll2", component: Viewpoll2Component},
+{path: "viewpoll3", component: Viewpoll3Component},
 {path: "surveys", component: SurveysComponent},
 {path: "newSurvey", component: CreateSurveyComponent},
 {path: "drafts", component: DraftsComponent},

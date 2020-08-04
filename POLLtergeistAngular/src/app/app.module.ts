@@ -45,6 +45,8 @@ import { NestedOptionComponent } from './nested-option/nested-option.component';
 import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
 import { AccountInfoComponent } from './internal/account-info/account-info.component';
+import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
+import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
 
 
 
@@ -70,7 +72,9 @@ import { AccountInfoComponent } from './internal/account-info/account-info.compo
     CreateAccountComponent,
     PolldataComponent,
     AccountComponent,
-    AccountInfoComponent
+    AccountInfoComponent,
+    Viewpoll2Component,
+    Viewpoll3Component
   ],
   imports: [
     BrowserModule,
