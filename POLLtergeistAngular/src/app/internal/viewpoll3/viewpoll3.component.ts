@@ -26,7 +26,7 @@ export class Viewpoll3Component implements OnInit {
   }
 
 viewData() {
-  this.router.navigate(['viewpolldata']);
+  this.router.navigate(['viewpolldata3']);
 }
 toPolls() {
     this.router.navigate(['polls']);

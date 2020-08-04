@@ -31,8 +31,8 @@ export class ViewpollComponent implements OnInit {
 viewData() {
   this.router.navigate(['viewpolldata']);
 }
-  toPolls() {
+toPolls() {
     this.router.navigate(['polls']);
-  }
+}
 
 }
