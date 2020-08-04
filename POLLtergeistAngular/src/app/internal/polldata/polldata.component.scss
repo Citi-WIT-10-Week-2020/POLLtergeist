@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 .title {
     text-align: center; 
+    margin-top: 30px;
+    color: black;
+    font-family: "Josepfin Sans", "san serif";
 }
 
 .graphBackground {
     background-color: #E7F3FF;
-    height: 500px; 
+    height: 350px; 
     margin: auto; 
     width: 500px;
     padding: 40px;
-    margin-top: 55px; 
+    margin-top: 40px; 
     text-align: center;
-
 }
 
 .viewPoll {
     width: 250px; 
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 20px;
     height: auto; 
     color: black;
@@ -23,4 +27,124 @@
     border-color: #E2E2E2;
     border-radius: 12px; 
     margin-left: 42%; 
+    font-family: "Josepfin Sans", "san serif";
+    font-size: 20px; 
+}
+
+.vl {
+    border-left: 3px solid black;
+    height: 234px;
+    position: absolute;
+    vertical-align: center; 
+    //margin-left: -3px;
+   // left:10%;
+    text-align: left; 
+  }
+  hr {
+    width: 60%;
+    margin-left: 0;
+    margin-right: auto;
+    color: black;
+    border-top: 3px solid black;
+  }
+
+.label {
+    
+    display: inline-block; 
+    font-family: "Josepfin Sans", "san serif";
+    line-height: 120px;
+    margin-left: 20px; 
+    text-align: center; 
+    color: black; 
+
+}
+
+.bar1 {
+    width: 80px; 
+   // margin-left: 30px; 
+    margin-top: 40px; 
+    height: 40px;
+    color: white; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px; 
+    font-family: "Josepfin Sans", "san serif";
+    background-color: #4072AD; 
+}
+
+.bar2 {
+    width: 125px; 
+  //  margin-left: 30px; 
+    height: 40px;
+    margin-top: 15px;
+    font-size: 20px; 
+    color: white; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: "Josepfin Sans", "san serif";
+    background-color:#0A6DE0; 
+}
+
+.bar3 {
+    width: 40px; 
+  //  margin-left: 30px; 
+    margin-top: 15px; 
+    height: 40px;
+    color: white; 
+    text-align: center; 
+    vertical-align: middle;
+    font-size: 18px; 
+    line-height: 40px;
+    font-family: "Josepfin Sans", "san serif";
+    background-color: #053164; 
+}
+
+.square1 {
+
+    width: 30px; 
+    margin-left: 200px; 
+    margin-top: 45px;
+    height: 30px;
+    color: black; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px; 
+    font-family: "Josepfin Sans", "san serif";
+    background-color: #4072AD; 
+
+}
+
+.square2 {
+
+    width: 30px; 
+    margin-left: 200px; 
+    margin-top: 45px;
+    height: 30px;
+    color: black; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px; 
+    font-family: "Josepfin Sans", "san serif";
+    background-color: #0A6DE0; 
+
+}
+
+.square3 {
+
+    width: 30px; 
+    margin-left: 200px; 
+    margin-top: 45px;
+    height: 30px;
+    color: black; 
+    text-align: center; 
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 20px; 
+    font-family: "Josepfin Sans", "san serif";
+    background-color: #053164; 
+
 }
