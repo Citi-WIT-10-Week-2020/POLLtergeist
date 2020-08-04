@@ -15,6 +15,14 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
 import { ViewsurveyComponent } from './internal/viewsurvey/viewsurvey.component';
+import { AccountComponent } from './internal/account/account.component';
+import { AccountInfoComponent } from './internal/account-info/account-info.component';
+import { PrivacyComponent } from './internal/privacy/privacy.component';
+import { HelpComponent } from './internal/help/help.component';
+import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
+import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
+import { Polldata2Component } from './internal/polldata2/polldata2.component';
+import { Polldata3Component } from './internal/polldata3/polldata3.component';
 
 const routes: Routes = [ {path: '', component: HomepageComponent}, 
 {path:'education', component: EdupageComponent},
@@ -24,6 +32,8 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'pollspage', component:PollspageComponent},
 {path: "polls", component: PollsComponent},
 {path: "viewpoll", component: ViewpollComponent},
+{path: "viewpoll2", component: Viewpoll2Component},
+{path: "viewpoll3", component: Viewpoll3Component},
 {path: "surveys", component: SurveysComponent},
 {path: "newSurvey", component: CreateSurveyComponent},
 {path: "drafts", component: DraftsComponent},
@@ -31,7 +41,13 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'signup', component: SignUpComponent},
 {path: 'createaccount', component: CreateAccountComponent},
 {path: 'viewpolldata', component: PolldataComponent},
-{path: 'viewsurvey', component: ViewsurveyComponent}
+{path: 'viewsurvey', component: ViewsurveyComponent},
+{path: 'viewpolldata2', component: Polldata2Component},
+{path: 'viewpolldata3', component: Polldata3Component},
+{path: 'account', component: AccountComponent},
+{path: 'myaccount', component: AccountInfoComponent},
+{path: 'privacy', component: PrivacyComponent},
+{path: 'help', component: HelpComponent}
 
 ];
 

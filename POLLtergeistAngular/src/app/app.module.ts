@@ -26,6 +26,7 @@ import { DraftsComponent } from './internal/drafts/drafts.component';
 import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
+import { AccountComponent } from './internal/account/account.component';
 
 //import {MatDatepickerModule} from '@angular/material/datepicker';
 import{MatInputModule} from '@angular/material/input';
@@ -42,9 +43,13 @@ import { FormBuilder, FormGroup, FormArray, FormControl, Validators } from '@ang
 import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
 import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
-import { AccountComponent } from './internal/account/account.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
 import { ViewsurveyComponent } from './internal/viewsurvey/viewsurvey.component';
+import { AccountInfoComponent } from './internal/account-info/account-info.component';
+import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
+import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
+import { Polldata2Component } from './internal/polldata2/polldata2.component';
+import { Polldata3Component } from './internal/polldata3/polldata3.component';
 
 
 
@@ -69,7 +74,13 @@ import { ViewsurveyComponent } from './internal/viewsurvey/viewsurvey.component'
     SignUpComponent,
     CreateAccountComponent,
     PolldataComponent,
-    ViewsurveyComponent
+    ViewsurveyComponent,
+    AccountComponent,
+    AccountInfoComponent,
+    Viewpoll2Component,
+    Viewpoll3Component,
+    Polldata2Component,
+    Polldata3Component
   ],
   imports: [
     BrowserModule,

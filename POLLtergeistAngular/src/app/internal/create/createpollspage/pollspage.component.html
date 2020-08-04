@@ -43,20 +43,21 @@
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
   </button>
 -->
-
   <div formArrayName="questions">
     <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let question of myForm.get('questions')['controls']; let i=index">
       <fieldset>
-        <legend><h4>Question {{i+1}}:<button style="background: url(x_mark.png)" type="button" class ="deleteQuestion" (click)="deleteQuestion(i)">
-          <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
-<span class="glyphicon glyphicon-minus"aria-hidden="true"></span> Remove Question
+        <div class = "together">
+          <div class = "questionTitle">
+        <legend><h4>Question {{i+1}}:<button style="background: url(trash.png); color:white" type="button" class ="deleteQuestion" onclick="return confirm('Are you sure you want to delete?');" (click)="deleteQuestion(i)">
+          <input type="image" src="assets/img/trash.png" width="30" height="30"/>
+<span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Question
 </button>
-
 </h4></legend>
+</div>
         <div [formGroupName]="i">
           <div class="form-inline">
             <div class="form-group">
-              <label style="margin-right:20px;" class="col-form-label" for="question">Question</label>
+              <label style="margin-right:20px;margin-left:5px;" class="col-form-label" for="question">Question</label>
               <input type="text"
                      class="form-control"
                      id="question"
@@ -67,7 +68,7 @@
                      required>
               <button style="background: url(plus_sign.png)" type="button" class = "addNewOption" (click)="addNewOption(question.controls.options)">
                 <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Options
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Answer Choices
               </button>
             </div>
           </div>
@@ -77,19 +78,20 @@
                 <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let option of question.get('options').controls; let j=index">
                   <div [formGroupName]="j">
                     <div class="form-group">
-                    <label style="margin-right:25px;"  class="col-form-label" for="emailId">Option {{j + 1}}</label>
+                    <label style="margin-right:25px; margin-left:5px;"  class="col-form-label" for="emailId">Answer Choice {{j + 1}}</label>
                     <input formControlName="option"
                            class="form-control"
                            style="margin-right:5px;" 
                            type="email"
-                           placeholder="Option"
+                           placeholder="Answer Choice"
                            id="option"
                            name="option"
                             />
-                 <button class = "deleteOption" style="background: url(x_mark.png)" type="button" (click)="deleteOption(question.controls.options, j)">
-                  <input type="image" src="assets/img/x_mark.png" width="30" height="30"/>
-<span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Option</span>
+                 <button class = "deleteOption" style="background:url(trash.png)" type="button" (click)="deleteOption(question.controls.options, j)">
+                  <input type="image" src="assets/img/trash.png" width="30" height="30"/>
+<span class="glyphicon glyphicon-minus"aria-hidden="true">Remove Answer Choice</span>
 </button>
+</div>
                     </div>
                   </div>
                 </div>
@@ -101,18 +103,17 @@
     </div>
   </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
-  <button type="button" class="btn btn-basic">Cancel</button>
-
   <button style="background: url(plus_sign.png)" class = "addQuestion" type="button" (click)="addNewQuestion()">
     <input type="image" src="assets/img/plus_sign.png" width="30" height="40"/>
     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Question
   </button>
+
   
 </form>
 
-
+<!-------
  <pre>{{myForm.value | json}}</pre>
+ ------>
 
 <!--------
     <div class="rectangle2">

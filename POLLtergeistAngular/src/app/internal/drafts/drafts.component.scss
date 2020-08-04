@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.rectangle {
+    height: 160px;
+    width: 100%;
+    background-color: #001233;
+    //connects to header no space in between 
+    margin-top: 0px; 
+    padding: 20px; 
+    //centers text in the middle of heading 
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+
+  }
+
+.rectangle2 {
+    height: 85px;
+    width: 25%;
+    margin: auto;
+    background-color: #E2E2E2;
+    border-radius: 20px; 
+    padding: 10px;
+    //centers text in middle of rectangle 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    //font size 
+    font-size: 25px;
+    font-family: "Josepfin Sans", "san serif";
+
+}
+
+.heading {
+    color: white; 
+    font-size: 100px;
+    text-align: center;
+    display: inline block;
+    font-family: 'Jolly Lodger', cursive;
+   
+}
+/*
+ .polltitle{
+    text-align: center;
+    margin: auto;
+    font-size: 35px; 
+    font-family: "Josefin Sans", "san serif";
+}
+*/
+.rectangle3{
+    background-color: #C4C4C4;
+    margin-left: 40px;
+    border-radius: 10px;
+    text-align:left;
+    width: 80%;
+    height: 250px;
+}
+p{
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    font-family: "Josefin Sans", "san serif";
+}
+.trash{
+    border: none;
+    margin-left: 80%;
+    margin-top:-50px;
+    
+    //padding-bottom: 40px;
+    //margin-bottom:30px;
+}
+.circle{
+    display:block;
+    margin-top:-75px;
+    margin-left: 88%;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    font-size:20px;
+    color:#fff;
+    line-height:100px;
+    text-align:center;
+    background:#001233;
+    font-family: "Josefin Sans", "san serif";
+
+}
+
+/*
+.draftDate{
+    //margin-left: 40px;
+    bottom: -90px;
+}
+*/
+h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "Josefin Sans", "san serif";
+}
+
+/*
+.table{
+    display:table; 
+}
+
+.row{
+   margin: auto;
+    //overflow-wrap: break-word; 
+}
+
+.pollsquare{
+    width: 250px;
+    height: 250px; 
+    background-color: #93C7FF;
+    //rounds corners
+    border-radius: 12px;
+    //space between elements 
+    margin-left:60px;
+    //space between rows 
+    margin-top:70px;
+    padding: 30px; 
+    //centers text in box
+    justify-content: center;
+    display: inline-flex;
+    align-items: center; 
+    
+} */

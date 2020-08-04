@@ -10,13 +10,13 @@ export const DATA = {
     question2: {
       title: "Favorite Shows",
       questionTitle: "What's your favorite show?",
-      answerChoices: ["Psych", "IASIP", "Criminal Minds", "Other"],
+      answerChoices: ["Psych", "IASIP", "New Girl"],
       index: 2
     },
     question3: {
       title: "Fall Semester",
       questionTitle: "Are you prepared for the fall semester?",
-      answerChoices: ["yes", "no"],
+      answerChoices: ["yes", "no", "I don't know"],
       index: 3
     },
     surveyQuestion: {
