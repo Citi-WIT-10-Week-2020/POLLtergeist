@@ -42,7 +42,7 @@ onSample(event) {
   var target = event.target || event.srcElement || event.currentTarget; 
   target.style.backgroundColor= '#023E7D';
   target.style.color = '#FFFFFF'
-  alert("route to survey");
+  this.router.navigate(['/viewsurvey']);
 //will pass in link to poll and redirect to the poll
 }
 }

@@ -44,6 +44,7 @@ import { OptionFormComponent } from './option-form/option-form.component';
 import { NestedOptionComponent } from './nested-option/nested-option.component';
 import { ViewpollComponent } from './internal/viewpoll/viewpoll.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
+import { ViewsurveyComponent } from './internal/viewsurvey/viewsurvey.component';
 import { AccountInfoComponent } from './internal/account-info/account-info.component';
 import { Viewpoll2Component } from './internal/viewpoll2/viewpoll2.component';
 import { Viewpoll3Component } from './internal/viewpoll3/viewpoll3.component';
@@ -73,6 +74,7 @@ import { Polldata3Component } from './internal/polldata3/polldata3.component';
     SignUpComponent,
     CreateAccountComponent,
     PolldataComponent,
+    ViewsurveyComponent,
     AccountComponent,
     AccountInfoComponent,
     Viewpoll2Component,

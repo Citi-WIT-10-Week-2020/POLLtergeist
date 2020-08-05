@@ -14,6 +14,7 @@ import { LoginPageComponent } from './login/login-page/login-page.component';
 import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
 import { PolldataComponent } from './internal/polldata/polldata.component';
+import { ViewsurveyComponent } from './internal/viewsurvey/viewsurvey.component';
 import { AccountComponent } from './internal/account/account.component';
 import { AccountInfoComponent } from './internal/account-info/account-info.component';
 import { PrivacyComponent } from './internal/privacy/privacy.component';
@@ -40,6 +41,7 @@ const routes: Routes = [ {path: '', component: HomepageComponent},
 {path: 'signup', component: SignUpComponent},
 {path: 'createaccount', component: CreateAccountComponent},
 {path: 'viewpolldata', component: PolldataComponent},
+{path: 'viewsurvey', component: ViewsurveyComponent},
 {path: 'viewpolldata2', component: Polldata2Component},
 {path: 'viewpolldata3', component: Polldata3Component},
 {path: 'account', component: AccountComponent},
