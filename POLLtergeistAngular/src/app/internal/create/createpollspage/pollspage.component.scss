@@ -1,0 +1,209 @@
+.button{
+    border:none;
+    border-radius:5px;
+    background-color:#001233;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 10%;
+    float: right;
+    position: relative;
+    margin: 10px;
+    //left:10;
+    //right:
+    top:20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.submit{
+    border:none;
+    border-radius:5px;
+    background-color:#001233;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 10%;
+    float: right;
+    position: relative;
+    margin: 10px;
+    //left:10;
+    //right:
+    top:20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*
+input{
+    border:none;
+    background-color: #001233;
+    color: white;
+    text-align: center;
+    border-radius:5px;
+    height: 40px;
+    width: 10%;
+    float: right;
+    position: relative;
+    left:80;
+    top:20px;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*/
+.calendar{
+float:right;
+position: relative;
+right:20px;
+top:-160px;
+}
+/*
+.button2{
+    background-color: #023E7D;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 15%;
+    float: left;
+    position: relative;
+    left:80;
+    top:20px;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*/
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin:50px;
+    font-size: 1em;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center; 
+    margin: 40px 80px;
+}
+
+.rectangle{
+    height: 50px;
+    //top: 20px;
+    width: 400px;
+    //text-align: justify;
+    color: white;
+    margin: 50px;
+    border-radius: 5px;
+    background-color: #023E7D;
+}
+
+.bluebutton{
+    //margin: 30px;
+    padding-left: 40px;
+    float: left;
+}
+
+.deadline{
+float:right;
+position: relative;
+//margin-left: 45%;
+right:110px;
+//margin:30px 50px;
+top:-100px;
+}
+
+.title{
+    background-color:#023E7D;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    //max-width: 500px;
+    //overflow: hidden;
+    //display: inline-block;
+    padding: 10px; 
+    border-radius: 12px;
+    position: relative;
+    //left:80;
+    top:-200px;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*
+.question{
+    background-color:#023E7D;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 60px;
+    width: 450px;
+    //max-width: 500px;
+    //overflow: hidden;
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 12px;
+    position: relative;
+    //left:80;
+    top:-200px;
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*/
+.option{
+    display: inline-block;
+    margin:10px;
+    padding:60px;
+    position: relative;
+    background-color: #001233;
+}
+.addQuestion{
+    border:none;
+    font-size:20px;
+    position:relative;
+    margin-top:-20px;
+    margin-left:250px;
+    //position: relative;
+    //margin-right: 40px;
+    //text-align: center;
+    //padding: 15px 23px;
+    //display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    //font-size: 25px;
+    //margin-bottom: 50px;
+}
+.addNewOption{
+    border:none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.deleteQuestion{
+    border:none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.deleteOption{
+    border:none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.together{
+    background-color: #C4C4C4;
+    position: relative;
+    top:-100px;
+    border-radius:5px;
+    width: 700px;
+    margin-left:30px;
+    font-size: 20px;
+    //padding-left: 10px;
+}
+.questionTitle{
+    font-size: 20px;
+    border-radius:5px;
+    background-color: #023E7D;
+    color: white;
+    text-align: center;
+    //padding-left: 10px;
+}
+h4{
+    font-size: 20px;
+}
+.sunCan{
+    //margin-top: 20px;
+    text-align: right;
+    margin-right:80px;
+}

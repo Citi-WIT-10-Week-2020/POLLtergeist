@@ -1,0 +1,199 @@
+<!-- Value : {{surveyForm.value | json }} -->
+<div *ngIf="!success">
+<form [formGroup] = "surveyForm">
+<hr>
+
+<div class = "top"></div>
+
+ <div class = "right">
+  <button  class = "inBetweenSpace" id='toDrafts'>
+    <span (click) = "drafts()">Save to Drafts</span>
+  </button>
+    <button  id='submit'>
+      <span (click) = "submission()">Submit</span>
+    </button>
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+<!-- title and date picker aligned on the same line -->
+<div class = "layoutIn">
+  <div class = "example-form">
+      <div class = "rectangle">
+        <mat-form-field class="surveyTitle">
+         <mat-label style="color:white; font-size: 20px;">Title of Survey</mat-label>
+            <textarea style = "font-size: 30px;" formControlName="title" matInput placeholder="Ex. Survey1"></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+  
+  <!-- choose date for deadline -->
+    <div class = "right">
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a deadline</mat-label>
+          <input formControlName="date" matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker ></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+
+<div formArrayName = "freeResponse">
+  <div *ngFor = "let frq of frqForms.controls; let i = index" [formGroupName]= "i">
+
+      <!-- first question : free response  -->
+
+    <div class = "top"></div>
+
+    <div class = "question">
+        <div class="example-container">
+          <mat-form-field  class = "questionTitle" style= "width: 600px;" appearance="fill">
+           <mat-label style = "color:white;">Title of Question 1</mat-label>
+            <input matInput style= "color: white; font-size: 20px;" formControlName="questionTitle">
+          </mat-form-field>
+   
+<br>
+<br>
+<br>
+
+<!-- answer to question 1  -->
+          <mat-form-field  style = "width: 500px;" appearance="outline">
+              <div class = "txtArea">
+                <textarea   matInput formControlName="answer"></textarea>
+              </div> 
+           </mat-form-field>
+        </div>
+
+        <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteFRQ(i)" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+
+<!-- these divs close array and nested form group free response -->
+  </div>
+</div>
+<!-- don't delete above divs -->
+
+<div formArrayName = "multipleChoice">
+  <div *ngFor = "let mc of mcForms.controls; let i = index" [formGroupName] ="i">
+    <!-- question 2 : multiple choice  -->
+  <div class = "top"></div>
+
+    <div class = "question">
+        <div class="example-container">
+          <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
+            <mat-label  style = "color:white;">Title of Question 2</mat-label>
+            <input tyle = "color:white;"  style = "font-size : 20px;" matInput>
+          </mat-form-field>
+   
+<br>
+<br>
+
+<!-- answer choices  -->
+          <div class = "MC">
+            <div formArrayName = "answerChoices"> 
+            <div *ngFor = "let opt of mc.get('answerChoices').controls; let k = index" [formGroupName] ="k"> 
+              <mat-radio-button  color="primary" style= "padding-left:10px;" value="1"> <input matInput placeholder="answer choice" formControlName="answerChoice"></mat-radio-button> 
+              <button onclick="return confirm('Are you sure?');" (click) = "deleteChoice(mc.controls.answerChoices, k)" mat-icon-button > 
+                <mat-icon>delete_forever icon</mat-icon>
+                </button>
+            <br>
+             </div> 
+             </div>  
+            <button mat-icon-button (click) = "addMCOption(mc.controls.answerChoices)"> 
+            <mat-icon>add_box icon</mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteMC(i)" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+        
+    </div>
+<!-- below divs close array and form group -->
+  </div>
+</div>
+<!-- above divs close array and form group -->
+
+<div formArrayName = "checkList">
+  <div *ngFor = "let cl of clForms.controls; let i = index" [formGroupName] ="i">
+
+<!-- question 3 : checklist -->
+    <div class = "top"></div>
+
+    <div class = "question">
+      <div class="example-container">
+         <mat-form-field class = "questionTitle" style= "width: 600px;" appearance="fill">
+            <mat-label style= "color: white;">Title of Question 3</mat-label>
+            <input style= "color: white; font-size: 20px;"matInput>
+           </mat-form-field>
+   
+<br>
+<br>
+
+<!-- answer choices  -->
+          <div class = "MC">
+            <div formArrayName = "answerChoices"> 
+              <div *ngFor = "let opt of cl.get('answerChoices').controls; let k = index" [formGroupName] ="k"> 
+            <mat-checkbox  color="primary" style= "padding-left:10px;"> <input matInput placeholder=" check me" formControlName="answerChoice"> </mat-checkbox>
+            <button (click) = "deleteChoice(cl.controls.answerChoices, k)" onclick="return confirm('Are you sure?');" mat-icon-button > 
+              <mat-icon>delete_forever icon</mat-icon>
+              </button>
+            <br>
+            </div>
+            </div>
+             <button mat-icon-button (click) = "addCLOption(cl.controls.answerChoices)"> 
+              <mat-icon>add_box icon</mat-icon>
+             </button> 
+          </div>
+      </div>
+      <button mat-fab color = "white" style = "left: 48%;" onclick="return confirm('Are you sure?');" (click) = "deleteCL(i)" aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+<!-- below divs close array and form group -->
+  </div>
+</div>
+<!-- above divs close array and form group -->
+<div class = "top"></div>
+<!-- menu to add more questions  -->
+<div class = "center">
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>add_circle_outline icon</mat-icon>
+  </button>
+
+<!-- to add -->
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+          <span (click) = "addFRQ()"> Free Response</span>
+      </button>
+      <button mat-menu-item>
+       <span (click)= "addMC()">Multiple Choice</span>
+      </button>
+      <button mat-menu-item>
+        <span (click)= "addCL()">CheckList</span>
+      </button>
+    </mat-menu>
+
+</div>
+</form>
+</div>
+
+<div class = "submitted" *ngIf = "success"> 
+  You have successfully created a survey!
+  <br>
+  <br>
+  <br>
+  <!--  
+  <button *ngIf = "success" id='submit'>
+    <span (click)= "toPolls()" >Return</span>
+  </button>
+  -->
+</div>

@@ -1,0 +1,37 @@
+<div class = "navySquare">
+    <h1>login</h1>
+    
+    <p>email</p>
+    <!--TEXT BOX TO TYPE ID-->
+    <div class = "whiteSquare">
+      <mat-form-field style = "width: 500px;"  value="accent" appearance="standard">
+        <input style = "width: 500px;"  matInput>
+      </mat-form-field>
+    </div>
+
+    <p style="padding-top: .5em">password</p>
+    <!--TEXT BOX TO TYPE PASS-->
+    <div class = "whiteSquare">
+         <mat-form-field style = "width: 500px;" appearance="standard">
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+    <!--  
+      <mat-form-field style = "width: 500px;"  value="accent" appearance="standard">
+        <input style = "width: 500px;"  matInput>
+      </mat-form-field>
+      -->
+    </div>
+
+    <!--CREATE ACCOUNT BUTTON-->
+    <div class="buttonPadding">
+      <div class="button">
+          <nav>   
+              <a class="buttonText" routerLink="/polls">login</a>
+          </nav>
+      </div>
+    </div>
+
+</div>

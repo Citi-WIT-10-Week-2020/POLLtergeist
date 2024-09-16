@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <body>
     <!-- homepage logo at very top  -->
       <div class = "container-fluid">
@@ -13,54 +12,27 @@
         </div>
 
       <br>
-      <br>
-      <br>
+ <!-- makes education package off center to the left and clickable --> 
+ <div class = "off-centerLeft">
+  <form (ngSubmit) = 'onEdu()'>
+  <input type="image" 
+  [src]= 'EducationPackage'
+  class=" img-fluid"  
+  alt="Education Package"
+  (click)="onEdu()">
+  </form>
+</div>
 
-      <style>
-        .off-centerLeft{
-          display: block;
-           margin-left: 350px;
-           margin-right: auto;
-           width: 40%
-         
-        }
-      
-        .off-centerRight{
-          display: block;
-          margin-left: 520px;
-          margin-right: auto;
-          width: 40%
-        }
-      </style>
-
-        <!-- makes education package off center to the left and clickable --> 
-        <div class = "off-centerLeft">
-          <form (ngSubmit) = 'onEdu()'>
-          <input type="image" 
-          [src]= 'EducationPackage'
-          class=" img-fluid"  
-          alt="Education Package"
-          (click)="onEdu()">
-          </form>
-        </div>
-
-        <!-- makes business package off center to the right and clickable -->
-        <div class = "off-centerRight">
-          <form (ngSubmit) = 'onBus()' > 
-            <input type = "image"
-            [src] = 'BusinessPackage'
-            class="img-fluid"  
-            alt="Responsive image"
-            (click) = "onBus()">
-          </form>
-        </div>
-      <!-- space  -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
+<!-- makes business package off center to the right and clickable -->
+<div class = "off-centerRight">
+  <form (ngSubmit) = 'onBus()' > 
+    <input type = "image"
+    [src] = 'BusinessPackage'
+    class="img-fluid"  
+    alt="Responsive image"
+    (click) = "onBus()">
+  </form>
+</div>
+<!-- space  -->  
     </div>
-  </body>
-</html>  
+</body>

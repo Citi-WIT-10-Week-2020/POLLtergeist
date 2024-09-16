@@ -1,0 +1,29 @@
+
+
+<body>
+    <!-- view poll button  -->
+    <div class = "title">
+     {{title}}
+    </div>
+
+    <button class = "viewPoll">
+       <span (click) = "viewPoll()">View the Poll</span>
+    </button>
+    <!-- background -->
+    <div class = "graphBackground">
+        Results
+        <br>
+        <br>
+        <div class = "vl"></div>
+        <div class = "bar1"> 50% </div> 
+        <div class = "bar2"> 0% </div>
+        <div class = "bar3"> 50% </div> 
+        <br>
+        <hr>
+    </div>
+    <div style = "display: inline-flex;  flex-direction: row; ">
+    <div class = "square1"></div> <div class = "label">yes </div>
+    <div class = "square2"></div> <div class = "label">no</div>
+    <div class = "square3"></div> <div class = "label">I don't know</div>
+    </div>
+</body>

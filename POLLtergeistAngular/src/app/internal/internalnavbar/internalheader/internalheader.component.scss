@@ -1,0 +1,66 @@
+a {
+    padding: 52px; //controls the spacing of the navbar links
+  }
+
+.b {
+    padding: 0px; 
+}
+  .spacing {
+      margin-right:60px;
+  }
+  .logo{
+    //background-color:#0466C8;
+    width: 6em;
+    height: 6em;
+    padding: 1em;
+  }
+
+  .d-flex{
+    background-color: #0466C8;
+    height: 6em;
+  }
+  a:link{
+    color:white;
+  }
+  nav{
+      //ALL LINES COMMENTED OUT ARE USELESS
+      line-height:100px;
+      //background-color:#0466C8;
+      font-family: 'Josefin Sans', sans-serif;
+      color:white;
+      //letter-spacing: 2px;
+      //font-size: 150%
+      font-size: 3vw;
+      //word-spacing: 500px;
+      //width: 50%;
+      //position: sticky;
+      //top: 0
+      //padding-top: 5px
+      //padding-bottom:5px;
+      //padding-top: .2em;
+  }
+  
+  a:visited{
+    color: #001845;
+  }
+  a:hover{ 
+    color: #001845;
+  }
+  .button
+  {
+    background-color: #979DAC;
+    border: none;
+    //height: 4em;
+    //line-height: 30px;
+    color: #0466C8;
+    //padding:em;
+    border-radius: 30px;
+    height:60px;
+    width:150px;
+    //text-align: center;
+    //text-decoration: none;
+    //display: inline;
+    //font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+  }

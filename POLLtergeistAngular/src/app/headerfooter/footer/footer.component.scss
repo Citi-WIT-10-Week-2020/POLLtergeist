@@ -1,0 +1,26 @@
+//.copyright
+    //flex-grow: 1
+    //align-self: center
+#page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+      
+#content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
+    
+footer{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    //letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 30px;
+    padding-top: 2px;
+    background-color: #979DAC;
+    //makes sure footer is at the bottom of the page
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}

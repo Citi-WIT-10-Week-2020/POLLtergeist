@@ -1,0 +1,16 @@
+<form [formGroup]="myForm">
+<hr>
+
+<mat-form-field>
+    <input matInput placeholder="question" formControlName="question">
+</mat-form-field>
+
+<h5>Option</h5>
+
+<div formGroupName ="option">
+    <mat-form-field>
+        <input matInput placeholder="answer" formControlName="answer">
+    </mat-form-field>
+</div>
+
+</form>

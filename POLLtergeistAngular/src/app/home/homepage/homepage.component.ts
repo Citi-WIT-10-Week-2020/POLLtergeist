@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { HeaderService } from 'src/app/services/header.service';
+import { InternalheaderService } from 'src/app/services/internalheader.service';
 
 
 
@@ -12,7 +14,7 @@ import { Router } from '@angular/router';
 export class HomepageComponent implements OnInit {
  
 
-  constructor(private router:Router) { }
+  constructor(public nav: HeaderService, public internalNav: InternalheaderService, private router:Router) { }
 
   imageWidthLogo: number = 1100;
   imageMarginLogo: number = 110; 
@@ -27,6 +29,10 @@ export class HomepageComponent implements OnInit {
   BusinessPackage: any = "assets/img/BusinessPackage.png"
 
   ngOnInit(): void {
+
+    this.nav.show();
+    this.internalNav.hide(); 
+  
   }
 
 

@@ -1,0 +1,48 @@
+.buttonPadding{
+    padding: 2em;
+    padding-left: 15em;
+  }
+  
+.button {
+    background: #0466C8;
+    border-radius: 10px;
+    width: 18em;
+    height: 6em;
+    border: none;
+  }
+  
+.buttonText {
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+  }
+
+.centeringPadding {
+    padding-left:43em;
+    padding-top:5em;
+}
+
+.text {
+    padding-right: 16.5em;
+    padding-left: 0em;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 50px;
+    text-align: center;
+    /* identical to box height */
+    color: #000000;
+}
+
+h1 {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: .5em;
+    line-height: 50px;
+    color: #000000;
+}
